@@ -4,11 +4,11 @@ from typing import Literal
 from pydantic import BaseModel, Field
 from langchain_anthropic import ChatAnthropic
 
-from app.config import ANTHROPIC_API_KEY, LLM_MODEL
+from app.config import ANTHROPIC_API_KEY, LLM_SCORING_MODEL
 
 logger = logging.getLogger(__name__)
 
-BATCH_SIZE = 20  # codes per LLM call to stay within token limits
+BATCH_SIZE = 40  # codes per LLM call
 
 SYSTEM_PROMPT = """You are a clinical coding expert reviewing candidate codes for a clinical code list.
 
@@ -21,7 +21,7 @@ For each code, decide:
 - "exclude" if the code does not belong (wrong condition, ambiguous, or irrelevant)
 - "uncertain" if clinical judgement is needed (the code might or might not belong)
 
-Provide a confidence score (0.0 to 1.0) and a brief rationale for each decision.
+Provide a confidence score (0.0 to 1.0) and a one-sentence rationale for each decision.
 
 Common edge cases to watch for:
 - A code for "patient invited for diabetes review" is ambiguous — the patient may not have diabetes
@@ -38,7 +38,7 @@ class CodeDecision(BaseModel):
     code: str = Field(description="The clinical code being evaluated")
     decision: Literal["include", "exclude", "uncertain"] = Field(description="Whether to include this code")
     confidence: float = Field(ge=0.0, le=1.0, description="Confidence in the decision")
-    rationale: str = Field(description="Brief explanation for the decision")
+    rationale: str = Field(description="One sentence explanation")
 
 
 class BatchDecisions(BaseModel):
@@ -100,7 +100,7 @@ def score_codes(state: dict) -> dict:
         raise ValueError("ANTHROPIC_API_KEY not set")
 
     llm = ChatAnthropic(
-        model=LLM_MODEL,
+        model=LLM_SCORING_MODEL,
         api_key=ANTHROPIC_API_KEY,
         max_tokens=4096,
     )

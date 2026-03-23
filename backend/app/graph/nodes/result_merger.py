@@ -1,5 +1,7 @@
 import logging
 
+from app.config import MAX_CANDIDATES
+
 logger = logging.getLogger(__name__)
 
 
@@ -61,10 +63,16 @@ def merge_and_dedup(state: dict) -> dict:
         reverse=True,
     )
 
+    # cap to top candidates to control LLM scoring cost
+    total_unique = len(deduped)
+    if total_unique > MAX_CANDIDATES:
+        logger.info("Capping %d candidates to top %d", total_unique, MAX_CANDIDATES)
+        deduped = deduped[:MAX_CANDIDATES]
+
     multi_source = sum(1 for d in deduped if d["source_count"] > 1)
     logger.info(
-        "Merged %d codes → %d unique (%d from multiple sources)",
-        len(codes), len(deduped), multi_source,
+        "Merged %d codes → %d unique → %d after cap (%d from multiple sources)",
+        len(codes), total_unique, len(deduped), multi_source,
     )
 
     return {"enriched_codes": deduped}

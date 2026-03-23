@@ -49,12 +49,17 @@ def add_codes(codes: list[dict]) -> int:
 
     collection = get_collection()
 
+    # dedup by ID within this batch (ChromaDB rejects duplicate IDs in a single call)
+    seen: dict[str, int] = {}
     ids = []
     documents = []
     metadatas = []
 
     for c in codes:
         doc_id = f"{c['vocabulary']}:{c['code']}"
+        if doc_id in seen:
+            continue
+        seen[doc_id] = 1
         ids.append(doc_id)
         documents.append(c.get("term", ""))
         metadatas.append({
@@ -64,7 +69,15 @@ def add_codes(codes: list[dict]) -> int:
             "domain": c.get("domain", ""),
         })
 
-    collection.upsert(ids=ids, documents=documents, metadatas=metadatas)
+    # batch in chunks of 5000 to avoid memory issues
+    BATCH = 5000
+    for i in range(0, len(ids), BATCH):
+        collection.upsert(
+            ids=ids[i:i + BATCH],
+            documents=documents[i:i + BATCH],
+            metadatas=metadatas[i:i + BATCH],
+        )
+
     logger.info("Upserted %d codes into ChromaDB", len(ids))
     return len(ids)
 
