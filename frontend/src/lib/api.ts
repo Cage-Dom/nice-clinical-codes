@@ -13,21 +13,22 @@ export interface CodeResult {
 }
 
 export interface SearchResponse {
+  search_id: string;
   query: string;
   conditions_parsed: Record<string, unknown>[];
   results: CodeResult[];
   summary: Record<string, unknown>;
   provenance_trail: Record<string, unknown>[];
+  elapsed_seconds: number;
 }
 
 export async function searchCodes(
   query: string,
-  codingSystems: string[] = ["SNOMED", "ICD10"]
 ): Promise<SearchResponse> {
   const res = await fetch(`${API_BASE}/search`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ query, coding_systems: codingSystems }),
+    body: JSON.stringify({ query }),
   });
   if (!res.ok) {
     throw new Error(`Search failed: ${res.status}`);
