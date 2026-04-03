@@ -1,0 +1,452 @@
+[
+  {
+    "code": "44054006",
+    "term": "Diabetes mellitus type 2",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9957,
+    "usage_frequency": null
+  },
+  {
+    "code": "443694000",
+    "term": "Uncontrolled type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9665,
+    "usage_frequency": null
+  },
+  {
+    "code": "237599002",
+    "term": "Insulin treated type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9626,
+    "usage_frequency": null
+  },
+  {
+    "code": "46635009",
+    "term": "Diabetes mellitus type 1",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9582,
+    "usage_frequency": null
+  },
+  {
+    "code": "73211009",
+    "term": "Diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9492,
+    "usage_frequency": null
+  },
+  {
+    "code": "444073006",
+    "term": "Uncontrolled type 1 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9369,
+    "usage_frequency": null
+  },
+  {
+    "code": "1481000119100",
+    "term": "Diabetes mellitus type 2 without retinopathy",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9356,
+    "usage_frequency": null
+  },
+  {
+    "code": "190389009",
+    "term": "Type II diabetes mellitus with ulcer",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9244,
+    "usage_frequency": null
+  },
+  {
+    "code": "8801005",
+    "term": "Secondary diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9211,
+    "usage_frequency": null
+  },
+  {
+    "code": "445353002",
+    "term": "Brittle type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9151,
+    "usage_frequency": null
+  },
+  {
+    "code": "422014003",
+    "term": "Disorder due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9119,
+    "usage_frequency": null
+  },
+  {
+    "code": "190368000",
+    "term": "Type I diabetes mellitus with ulcer",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9097,
+    "usage_frequency": null
+  },
+  {
+    "code": "313436004",
+    "term": "Type II diabetes mellitus without complication",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9067,
+    "usage_frequency": null
+  },
+  {
+    "code": "290002008",
+    "term": "Brittle type 1 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8925,
+    "usage_frequency": null
+  },
+  {
+    "code": "190390000",
+    "term": "Type II diabetes mellitus with gangrene",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8914,
+    "usage_frequency": null
+  },
+  {
+    "code": "313435000",
+    "term": "Type I diabetes mellitus without complication",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8911,
+    "usage_frequency": null
+  },
+  {
+    "code": "190388001",
+    "term": "Multiple complications due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8904,
+    "usage_frequency": null
+  },
+  {
+    "code": "421750000",
+    "term": "Ketoacidosis due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8897,
+    "usage_frequency": null
+  },
+  {
+    "code": "237601000",
+    "term": "Secondary endocrine diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8873,
+    "usage_frequency": null
+  },
+  {
+    "code": "420715001",
+    "term": "Persistent microalbuminuria due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8867,
+    "usage_frequency": null
+  },
+  {
+    "code": "401110002",
+    "term": "Type 1 diabetes mellitus with persistent microalbuminuria",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8856,
+    "usage_frequency": null
+  },
+  {
+    "code": "703138006",
+    "term": "Type II diabetes mellitus in remission",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8838,
+    "usage_frequency": null
+  },
+  {
+    "code": "421631007",
+    "term": "Gangrene due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8817,
+    "usage_frequency": null
+  },
+  {
+    "code": "1217068008",
+    "term": "Fulminant type 1 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8785,
+    "usage_frequency": null
+  },
+  {
+    "code": "420868002",
+    "term": "Disorder due to type 1 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8779,
+    "usage_frequency": null
+  },
+  {
+    "code": "140531000119105",
+    "term": "Neuropathic ulcer of foot due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8746,
+    "usage_frequency": null
+  },
+  {
+    "code": "190369008",
+    "term": "Type I diabetes mellitus with gangrene",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8704,
+    "usage_frequency": null
+  },
+  {
+    "code": "314902007",
+    "term": "Peripheral angiopathy due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.868,
+    "usage_frequency": null
+  },
+  {
+    "code": "422228004",
+    "term": "Multiple complications due to type 1 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8662,
+    "usage_frequency": null
+  },
+  {
+    "code": "421305000",
+    "term": "Persistent microalbuminuria due to type 1 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8656,
+    "usage_frequency": null
+  },
+  {
+    "code": "420270002",
+    "term": "Ketoacidosis due to type 1 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8596,
+    "usage_frequency": null
+  },
+  {
+    "code": "1196922005",
+    "term": "Neovascular glaucoma due to diabetes mellitus type 2",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8568,
+    "usage_frequency": null
+  },
+  {
+    "code": "703137001",
+    "term": "Type I diabetes mellitus in remission",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8568,
+    "usage_frequency": null
+  },
+  {
+    "code": "314771006",
+    "term": "Type I diabetes mellitus with hypoglycemic coma",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8564,
+    "usage_frequency": null
+  },
+  {
+    "code": "739681000",
+    "term": "Disorder of eye due to type 1 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8555,
+    "usage_frequency": null
+  },
+  {
+    "code": "420825003",
+    "term": "Gangrene due to type 1 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8527,
+    "usage_frequency": null
+  },
+  {
+    "code": "421847006",
+    "term": "Ketoacidotic coma due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8515,
+    "usage_frequency": null
+  },
+  {
+    "code": "789569005",
+    "term": "Neuropathic ulcer of heel due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8495,
+    "usage_frequency": null
+  },
+  {
+    "code": "314903002",
+    "term": "Arthropathy due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8494,
+    "usage_frequency": null
+  },
+  {
+    "code": "140381000119104",
+    "term": "Neuropathic ulcer of toe due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8471,
+    "usage_frequency": null
+  },
+  {
+    "code": "1217044000",
+    "term": "Ketosis-resistant diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8455,
+    "usage_frequency": null
+  },
+  {
+    "code": "385041000000108",
+    "term": "Diabetes mellitus with multiple complications",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8451,
+    "usage_frequency": null
+  },
+  {
+    "code": "421437000",
+    "term": "Hypoglycemic coma due to type 1 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8445,
+    "usage_frequency": null
+  },
+  {
+    "code": "71421000119105",
+    "term": "Hypertension in chronic kidney disease due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8403,
+    "usage_frequency": null
+  },
+  {
+    "code": "111552007",
+    "term": "Diabetes mellitus without complication",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8334,
+    "usage_frequency": null
+  },
+  {
+    "code": "5368009",
+    "term": "Drug-induced diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8307,
+    "usage_frequency": null
+  },
+  {
+    "code": "11530004",
+    "term": "Brittle diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8303,
+    "usage_frequency": null
+  },
+  {
+    "code": "140131000119102",
+    "term": "Hypertension in chronic kidney disease stage 2 due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.83,
+    "usage_frequency": null
+  },
+  {
+    "code": "51002006",
+    "term": "Diabetes mellitus associated with pancreatic disease",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8294,
+    "usage_frequency": null
+  },
+  {
+    "code": "395204000",
+    "term": "Hyperosmolar non-ketotic state due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8256,
+    "usage_frequency": null
+  }
+]

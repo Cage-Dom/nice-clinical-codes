@@ -1,0 +1,452 @@
+[
+  {
+    "code": "2751001",
+    "term": "Fibrocalculous pancreatic diabetes (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "4855003",
+    "term": "Retinopathy co-occurrent and due to diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "5368009",
+    "term": "Drug-induced diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "5969009",
+    "term": "Diabetes mellitus associated with genetic syndrome (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "8801005",
+    "term": "Secondary diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "11530004",
+    "term": "Brittle diabetes mellitus (finding)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "11687002",
+    "term": "Gestational diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "23045005",
+    "term": "Insulin dependent diabetes mellitus type IA (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "25093002",
+    "term": "Disorder of eye co-occurrent and due to diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "25412000",
+    "term": "Diabetic retinal microaneurysm (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "26298008",
+    "term": "Diabetic coma with ketoacidosis (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "33559001",
+    "term": "Pineal hyperplasia AND diabetes mellitus syndrome (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "39058009",
+    "term": "Lumbosacral radiculoplexus neuropathy co-occurrent and due to diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "43959009",
+    "term": "Cataract co-occurrent and due to diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "44054006",
+    "term": "Diabetes mellitus type 2 (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "46635009",
+    "term": "Diabetes mellitus type 1 (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "46894009",
+    "term": "Gestational diabetes mellitus, class A>2< (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "48951005",
+    "term": "Bullosis diabeticorum (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "49455004",
+    "term": "Polyneuropathy co-occurrent and due to diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "49817004",
+    "term": "Neonatal diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "50620007",
+    "term": "Autonomic neuropathy co-occurrent and due to diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "51002006",
+    "term": "Diabetes mellitus associated with pancreatic disease (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "59276001",
+    "term": "Proliferative retinopathy co-occurrent and due to diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "70694009",
+    "term": "Diabetes mellitus AND insipidus with optic atrophy AND deafness (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "73211009",
+    "term": "Diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "74627003",
+    "term": "Diabetic complication (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "75022004",
+    "term": "Gestational diabetes mellitus, class A>1< (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "75524006",
+    "term": "Malnutrition related diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "75682002",
+    "term": "Diabetes mellitus caused by insulin receptor antibodies (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "76751001",
+    "term": "Diabetes mellitus in mother complicating pregnancy, childbirth AND/OR puerperium (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "111307005",
+    "term": "Leprechaunism syndrome (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "111552007",
+    "term": "Diabetes mellitus without complication (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "111556005",
+    "term": "Diabetic ketoacidosis without coma (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "126534007",
+    "term": "Mixed sensorimotor polyneuropathy co-occurrent and due to diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "127012008",
+    "term": "Lipoatrophic diabetes (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "127013003",
+    "term": "Disorder of kidney co-occurrent and due to diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "127014009",
+    "term": "Diabetic peripheral angiopathy (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "170766006",
+    "term": "Loss of hypoglycemic warning (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "190330002",
+    "term": "Type 1 diabetes mellitus with hyperosmolar coma (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "190331003",
+    "term": "Type 2 diabetes mellitus with hyperosmolar coma (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "190368000",
+    "term": "Type I diabetes mellitus with ulcer (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "190369008",
+    "term": "Type I diabetes mellitus with gangrene (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "190372001",
+    "term": "Type I diabetes mellitus maturity onset (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "190388001",
+    "term": "Type II diabetes mellitus with multiple complications (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "190389009",
+    "term": "Type II diabetes mellitus with ulcer (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "190406000",
+    "term": "Malnutrition-related diabetes mellitus with ketoacidosis (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "190411003",
+    "term": "Malnutrition-related diabetes mellitus with multiple complications (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "190416008",
+    "term": "Steroid-induced diabetes mellitus without complication (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "190447002",
+    "term": "Steroid-induced diabetes (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "193141005",
+    "term": "Mononeuritis multiplex co-occurrent and due to diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (qcovid)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  }
+]

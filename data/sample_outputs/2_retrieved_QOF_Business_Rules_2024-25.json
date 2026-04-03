@@ -1,0 +1,452 @@
+[
+  {
+    "code": "162659009",
+    "term": "Hypertension resolved (finding)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": 0.8337,
+    "usage_frequency": null
+  },
+  {
+    "code": "185721007",
+    "term": "Hypertension monitoring third letter (procedure)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": 0.7493,
+    "usage_frequency": null
+  },
+  {
+    "code": "185719002",
+    "term": "Hypertension monitoring first letter (procedure)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": 0.7449,
+    "usage_frequency": null
+  },
+  {
+    "code": "10752641000119102",
+    "term": "Eclampsia with pre-existing hypertension in childbirth (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "10759031000119106",
+    "term": "Pre-existing hypertensive heart disease in mother complicating pregnancy (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "111438007",
+    "term": "Hypertension secondary to renal disease in obstetric context (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "1201005",
+    "term": "Benign essential hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "1204139007",
+    "term": "Hypertension due to congenital adrenal hyperplasia (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "1208839002",
+    "term": "Secondary hypertension due to renal tubular disorder (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "128001000119105",
+    "term": "Hypertension concurrent and due to end stage renal disease on dialysis due to type 1 diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "132721000119104",
+    "term": "Hypertensive emergency (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "14973001",
+    "term": "Renal sclerosis with hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "16229371000119106",
+    "term": "Labile systemic arterial hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "169465000",
+    "term": "Hypertension caused by oral contraceptive pill (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "18416000",
+    "term": "Essential hypertension complicating AND/OR reason for care during childbirth (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "194783001",
+    "term": "Secondary malignant renovascular hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "194791005",
+    "term": "Hypertension caused by drug (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "198942000",
+    "term": "Benign essential hypertension complicating pregnancy, childbirth and the puerperium (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "198947006",
+    "term": "Benign essential hypertension complicating pregnancy, childbirth and the puerperium with postnatal complication (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "198997005",
+    "term": "Pre-eclampsia or eclampsia with pre-existing hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "199003007",
+    "term": "Pre-eclampsia or eclampsia with pre-existing hypertension with postnatal complication (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "199006004",
+    "term": "Pre-existing hypertensive heart disease complicating pregnancy, childbirth and the puerperium (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "24042004",
+    "term": "Chronic hypertension complicating AND/OR reason for care during puerperium (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "28119000",
+    "term": "Renal hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "29259002",
+    "term": "Malignant hypertension complicating AND/OR reason for care during pregnancy (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "34694006",
+    "term": "Pre-existing hypertension complicating AND/OR reason for care during childbirth (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "367821000119106",
+    "term": "Hypertension due to compression of renal parenchyma (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "371125006",
+    "term": "Labile essential hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "38341003",
+    "term": "Hypertensive disorder, systemic arterial (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "397748008",
+    "term": "Hypertension with albuminuria (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "40511000119107",
+    "term": "Postpartum pre-existing essential hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "427889009",
+    "term": "Hypertension associated with transplantation (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "429457004",
+    "term": "Systolic essential hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "443482000",
+    "term": "Hypertensive urgency (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "46481004",
+    "term": "Low-renin essential hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "48552006",
+    "term": "Hypertension secondary to renal disease complicating AND/OR reason for care during pregnancy (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "56218007",
+    "term": "Systolic hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "57684003",
+    "term": "Parenchymal renal hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "69909000",
+    "term": "Eclampsia added to pre-existing hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "70272006",
+    "term": "Malignant hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "706882009",
+    "term": "Hypertensive crisis (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "71701000119105",
+    "term": "Hypertension in chronic kidney disease due to type 1 diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "71874008",
+    "term": "Benign essential hypertension complicating AND/OR reason for care during childbirth (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "74451002",
+    "term": "Secondary diastolic hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "762463000",
+    "term": "Diastolic hypertension co-occurrent with systolic hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "766937004",
+    "term": "Hypertension due to gain-of-function mutation in mineralocorticoid receptor (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "78808002",
+    "term": "Essential hypertension complicating AND/OR reason for care during pregnancy (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "84094009",
+    "term": "Rebound hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "843821000000102",
+    "term": "Stage 1 hypertension (National Institute for Health and Clinical Excellence 2011) (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "843841000000109",
+    "term": "Severe hypertension (National Institute for Health and Clinical Excellence 2011) (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "QOF Business Rules 2024-25",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "conditions": [
+    {
+      "name": "Type 2 diabetes mellitus",
+      "condition_type": "primary",
+      "coding_systems": [
+        "SNOMED",
+        "ICD10"
+      ],
+      "domain": "Condition"
+    },
+    {
+      "name": "Hypertension",
+      "condition_type": "comorbidity",
+      "coding_systems": [
+        "SNOMED",
+        "ICD10"
+      ],
+      "domain": "Condition"
+    }
+  ]
+}

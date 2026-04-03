@@ -1,0 +1,1518 @@
+[
+  {
+    "code": "73211009",
+    "term": "Diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "uncertain",
+    "confidence": 0.5,
+    "rationale": "Generic diabetes mellitus code that could include type 1, type 2, or other types; too broad without type-specific qualification for a type 2 diabetes-focused list.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.5,
+    "usage_frequency": null
+  },
+  {
+    "code": "8801005",
+    "term": "Secondary diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.95,
+    "rationale": "Secondary diabetes mellitus is excluded as it represents diabetes caused by other conditions, not primary type 2 diabetes mellitus.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "237601000",
+    "term": "Secondary endocrine diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.95,
+    "rationale": "Secondary endocrine diabetes mellitus represents diabetes due to endocrine disorders, not primary type 2 diabetes.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "10725009",
+    "term": "Benign hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.9,
+    "rationale": "Benign hypertension is a hypertension code appropriate for inclusion as a comorbidity code as specified in the query.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OMOPHub",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.9,
+    "usage_frequency": null
+  },
+  {
+    "code": "314903002",
+    "term": "Type II diabetes mellitus with arthropathy (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.9,
+    "rationale": "Type II diabetes mellitus with arthropathy is a specific type 2 diabetes code with a complication; relevant to primary condition.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OMOPHub",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.9,
+    "usage_frequency": null
+  },
+  {
+    "code": "1201005",
+    "term": "Benign essential hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.95,
+    "rationale": "Benign essential hypertension is a core hypertension code appropriate for inclusion as a comorbidity.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OMOPHub",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "385041000000108",
+    "term": "Diabetes mellitus with multiple complications (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.9,
+    "rationale": "Diabetes mellitus with multiple complications is a relevant type 2 diabetes code when complications are present.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.9,
+    "usage_frequency": null
+  },
+  {
+    "code": "111552007",
+    "term": "Diabetes mellitus without complication (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.85,
+    "rationale": "Diabetes mellitus without complication is a general diabetes code; should be included for patients with type 2 diabetes without complications.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.85,
+    "usage_frequency": null
+  },
+  {
+    "code": "5368009",
+    "term": "Drug-induced diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.9,
+    "rationale": "Drug-induced diabetes mellitus is a secondary form of diabetes, not primary type 2 diabetes mellitus.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.9,
+    "usage_frequency": null
+  },
+  {
+    "code": "11530004",
+    "term": "Brittle diabetes mellitus (finding)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.85,
+    "rationale": "Brittle diabetes mellitus is not specifically type 2 and is coded as a finding rather than a disorder; clinically distinct from the primary condition.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.85,
+    "usage_frequency": null
+  },
+  {
+    "code": "51002006",
+    "term": "Diabetes mellitus associated with pancreatic disease (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.9,
+    "rationale": "Diabetes mellitus associated with pancreatic disease is secondary diabetes, not primary type 2 diabetes mellitus.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.9,
+    "usage_frequency": null
+  },
+  {
+    "code": "71874008",
+    "term": "Benign essential hypertension complicating AND/OR reason for care during childbirth (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.9,
+    "rationale": "This is hypertension in obstetric context (childbirth), which is a specialized clinical scenario outside the general primary type 2 diabetes and hypertension query.",
+    "sources": [
+      "OMOPHub",
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.9,
+    "usage_frequency": null
+  },
+  {
+    "code": "23717007",
+    "term": "Benign essential hypertension complicating AND/OR reason for care during pregnancy (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.9,
+    "rationale": "This is hypertension complicating pregnancy, which is an obstetric-specific scenario not relevant to the general query.",
+    "sources": [
+      "OMOPHub",
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.9,
+    "usage_frequency": null
+  },
+  {
+    "code": "35303009",
+    "term": "Benign essential hypertension complicating AND/OR reason for care during puerperium (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.9,
+    "rationale": "This is hypertension complicating puerperium, which is an obstetric-specific scenario not relevant to the general query.",
+    "sources": [
+      "OMOPHub",
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.9,
+    "usage_frequency": null
+  },
+  {
+    "code": "198942000",
+    "term": "Benign essential hypertension complicating pregnancy, childbirth and the puerperium (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.9,
+    "rationale": "This is hypertension complicating pregnancy, childbirth and puerperium, which is obstetric-specific and not relevant to the general query.",
+    "sources": [
+      "OMOPHub",
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.9,
+    "usage_frequency": null
+  },
+  {
+    "code": "63287004",
+    "term": "Benign essential hypertension in obstetric context (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.9,
+    "rationale": "This is benign essential hypertension in obstetric context, which is pregnancy-specific and not relevant to the general query.",
+    "sources": [
+      "OMOPHub",
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.9,
+    "usage_frequency": null
+  },
+  {
+    "code": "44054006",
+    "term": "Diabetes mellitus type 2 (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.95,
+    "rationale": "Diabetes mellitus type 2 is the core condition code directly matching the primary query.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "443694000",
+    "term": "Type II diabetes mellitus uncontrolled (finding)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.9,
+    "rationale": "Type II diabetes mellitus uncontrolled is a specific type 2 diabetes status relevant to the primary condition.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.9,
+    "usage_frequency": null
+  },
+  {
+    "code": "237599002",
+    "term": "Insulin treated type 2 diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.9,
+    "rationale": "Insulin treated type 2 diabetes mellitus is a specific type 2 diabetes code relevant to the primary condition.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.9,
+    "usage_frequency": null
+  },
+  {
+    "code": "46635009",
+    "term": "Diabetes mellitus type 1 (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.95,
+    "rationale": "Diabetes mellitus type 1 is explicitly a different condition and should be excluded from a type 2 diabetes code list.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "56218007",
+    "term": "Systolic hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.9,
+    "rationale": "Systolic hypertension is a specific hypertension code relevant to the comorbidity specification.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.9,
+    "usage_frequency": null
+  },
+  {
+    "code": "444073006",
+    "term": "Type I diabetes mellitus uncontrolled (finding)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.95,
+    "rationale": "Type I diabetes mellitus uncontrolled is type 1 diabetes and should be excluded from a type 2 diabetes list.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "1481000119100",
+    "term": "Diabetes mellitus type 2 without retinopathy (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.9,
+    "rationale": "Diabetes mellitus type 2 without retinopathy is a specific type 2 diabetes code with complication status information.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.9,
+    "usage_frequency": null
+  },
+  {
+    "code": "31992008",
+    "term": "Secondary hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.85,
+    "rationale": "Secondary hypertension is hypertension caused by another condition and may not be appropriate for a general hypertension comorbidity list focused on essential/primary hypertension.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.85,
+    "usage_frequency": null
+  },
+  {
+    "code": "190389009",
+    "term": "Type II diabetes mellitus with ulcer (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.9,
+    "rationale": "Type II diabetes mellitus with ulcer is a type 2 diabetes code with specific complication.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.9,
+    "usage_frequency": null
+  },
+  {
+    "code": "59621000",
+    "term": "Essential hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.95,
+    "rationale": "Essential hypertension is the primary hypertension code relevant to the comorbidity specification.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "445353002",
+    "term": "Brittle type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.85,
+    "rationale": "Brittle type 2 diabetes mellitus is a specific diabetes phenotype; clinical relevance depends on whether brittle diabetes should be included in primary type 2 diabetes lists.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OMOPHub"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.85,
+    "usage_frequency": null
+  },
+  {
+    "code": "422014003",
+    "term": "Disorder due to type 2 diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.85,
+    "rationale": "Disorder due to type 2 diabetes mellitus indicates type 2 diabetes-related complications and is relevant to the primary condition.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.85,
+    "usage_frequency": null
+  },
+  {
+    "code": "190368000",
+    "term": "Type I diabetes mellitus with ulcer (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.95,
+    "rationale": "Type I diabetes mellitus with ulcer is type 1 diabetes and should be excluded from a type 2 diabetes list.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "313436004",
+    "term": "Type II diabetes mellitus without complication (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.95,
+    "rationale": "Type II diabetes mellitus without complication is a core type 2 diabetes code.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "48146000",
+    "term": "Diastolic hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.9,
+    "rationale": "Diastolic hypertension is a specific hypertension code relevant to the comorbidity specification.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.9,
+    "usage_frequency": null
+  },
+  {
+    "code": "429457004",
+    "term": "Systolic essential hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.95,
+    "rationale": "Systolic essential hypertension is a specific hypertension code relevant to the comorbidity specification.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "290002008",
+    "term": "Brittle type I diabetes mellitus (finding)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.95,
+    "rationale": "Brittle type I diabetes mellitus is type 1 diabetes and should be excluded from a type 2 diabetes list.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "313435000",
+    "term": "Type I diabetes mellitus without complication (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.95,
+    "rationale": "Type I diabetes mellitus without complication is type 1 diabetes and should be excluded from a type 2 diabetes list.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "190388001",
+    "term": "Type II diabetes mellitus with multiple complications (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.9,
+    "rationale": "Type II diabetes mellitus with multiple complications is a type 2 diabetes code with complication information.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.9,
+    "usage_frequency": null
+  },
+  {
+    "code": "421750000",
+    "term": "Ketoacidosis in type II diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.9,
+    "rationale": "Ketoacidosis in type II diabetes mellitus is a specific type 2 diabetes complication code.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.9,
+    "usage_frequency": null
+  },
+  {
+    "code": "863191000000102",
+    "term": "Nocturnal hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "uncertain",
+    "confidence": 0.6,
+    "rationale": "Nocturnal hypertension is a specific hypertension phenotype; relevance depends on whether phenotype-specific hypertension codes should be included.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.6,
+    "usage_frequency": null
+  },
+  {
+    "code": "420715001",
+    "term": "Persistent microalbuminuria associated with type II diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.9,
+    "rationale": "Persistent microalbuminuria associated with type II diabetes mellitus is a type 2 diabetes complication code.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.9,
+    "usage_frequency": null
+  },
+  {
+    "code": "401110002",
+    "term": "Type 1 diabetes mellitus with persistent microalbuminuria (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.95,
+    "rationale": "Type 1 diabetes mellitus with persistent microalbuminuria is type 1 diabetes and should be excluded from a type 2 diabetes list.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "703138006",
+    "term": "Type II diabetes mellitus in remission (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "uncertain",
+    "confidence": 0.6,
+    "rationale": "Type II diabetes mellitus in remission indicates resolved diabetes; codes for resolved conditions are typically excluded unless the query specifically includes remission status.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.6,
+    "usage_frequency": null
+  },
+  {
+    "code": "421631007",
+    "term": "Gangrene associated with type II diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.95,
+    "rationale": "Type 2 diabetes complication (gangrene), directly relevant to the primary condition.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "70272006",
+    "term": "Malignant hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.85,
+    "rationale": "Specific form of hypertension (malignant), relevant to the comorbidity condition.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.85,
+    "usage_frequency": null
+  },
+  {
+    "code": "28119000",
+    "term": "Renal hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.85,
+    "rationale": "Specific form of hypertension (renal origin), relevant to the comorbidity condition.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.85,
+    "usage_frequency": null
+  },
+  {
+    "code": "420868002",
+    "term": "Disorder due to type 1 diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.98,
+    "rationale": "Type 1 diabetes disorder, not relevant to Type 2 diabetes mellitus code list.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.98,
+    "usage_frequency": null
+  },
+  {
+    "code": "190369008",
+    "term": "Type I diabetes mellitus with gangrene (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.99,
+    "rationale": "Type 1 diabetes complication (gangrene), not relevant to Type 2 diabetes code list.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.99,
+    "usage_frequency": null
+  },
+  {
+    "code": "74451002",
+    "term": "Secondary diastolic hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.85,
+    "rationale": "Specific form of secondary diastolic hypertension, relevant to the hypertension comorbidity.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.85,
+    "usage_frequency": null
+  },
+  {
+    "code": "314902007",
+    "term": "Type 2 diabetes mellitus with peripheral angiopathy (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.95,
+    "rationale": "Type 2 diabetes complication (peripheral angiopathy), directly relevant to the primary condition.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "422228004",
+    "term": "Multiple complications of type I diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.99,
+    "rationale": "Type 1 diabetes complications, not relevant to Type 2 diabetes mellitus code list.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.99,
+    "usage_frequency": null
+  },
+  {
+    "code": "39018007",
+    "term": "Renal arterial hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.85,
+    "rationale": "Specific form of hypertension (renal arterial origin), relevant to the hypertension comorbidity.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.85,
+    "usage_frequency": null
+  },
+  {
+    "code": "420270002",
+    "term": "Ketoacidosis in type I diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.99,
+    "rationale": "Ketoacidosis in Type 1 diabetes; Type 2 typically does not develop ketoacidosis.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.99,
+    "usage_frequency": null
+  },
+  {
+    "code": "123799005",
+    "term": "Renovascular hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.85,
+    "rationale": "Renovascular hypertension, relevant to the hypertension comorbidity.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.85,
+    "usage_frequency": null
+  },
+  {
+    "code": "703137001",
+    "term": "Type I diabetes mellitus in remission (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.98,
+    "rationale": "Type 1 diabetes in remission, not relevant to Type 2 diabetes mellitus code list.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.98,
+    "usage_frequency": null
+  },
+  {
+    "code": "38341003",
+    "term": "Hypertensive disorder, systemic arterial (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.95,
+    "rationale": "Systemic arterial hypertension (parent concept), relevant to the hypertension comorbidity.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "314771006",
+    "term": "Type I diabetes mellitus with hypoglycemic coma (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.99,
+    "rationale": "Type 1 diabetes with hypoglycemic coma, not relevant to Type 2 diabetes mellitus code list.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.99,
+    "usage_frequency": null
+  },
+  {
+    "code": "739681000",
+    "term": "Disorder of eye co-occurrent and due to type 1 diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.99,
+    "rationale": "Type 1 diabetes ocular complication, not relevant to Type 2 diabetes mellitus code list.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.99,
+    "usage_frequency": null
+  },
+  {
+    "code": "78975002",
+    "term": "Malignant essential hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.85,
+    "rationale": "Malignant essential hypertension, relevant to the hypertension comorbidity.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.85,
+    "usage_frequency": null
+  },
+  {
+    "code": "59720008",
+    "term": "Sustained diastolic hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.85,
+    "rationale": "Sustained diastolic hypertension, relevant to the hypertension comorbidity.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.85,
+    "usage_frequency": null
+  },
+  {
+    "code": "420825003",
+    "term": "Gangrene associated with type I diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.99,
+    "rationale": "Gangrene associated with Type 1 diabetes, not relevant to Type 2 diabetes mellitus code list.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.99,
+    "usage_frequency": null
+  },
+  {
+    "code": "421847006",
+    "term": "Ketoacidotic coma in type II diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.8,
+    "rationale": "Type 2 diabetes with ketoacidotic coma; rare but clinically valid Type 2 diabetes complication.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.8,
+    "usage_frequency": null
+  },
+  {
+    "code": "371125006",
+    "term": "Labile essential hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.85,
+    "rationale": "Labile essential hypertension, relevant to the hypertension comorbidity.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.85,
+    "usage_frequency": null
+  },
+  {
+    "code": "1217044000",
+    "term": "Ketosis-resistant diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "decision": "uncertain",
+    "confidence": 0.6,
+    "rationale": "Ketosis-resistant diabetes is typically Type 2 diabetes (MODY), but unclear if MODY should be included in a primary Type 2 diabetes list.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (nhsd-primary-care-domain-refsets)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.6,
+    "usage_frequency": null
+  },
+  {
+    "code": "84094009",
+    "term": "Rebound hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.8,
+    "rationale": "Rebound hypertension, relevant to the hypertension comorbidity.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.8,
+    "usage_frequency": null
+  },
+  {
+    "code": "89242004",
+    "term": "Malignant secondary hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.85,
+    "rationale": "Malignant secondary hypertension, relevant to the hypertension comorbidity.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.85,
+    "usage_frequency": null
+  },
+  {
+    "code": "71421000119105",
+    "term": "Hypertension in chronic kidney disease due to type 2 diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.95,
+    "rationale": "Hypertension in chronic kidney disease due to Type 2 diabetes, directly relevant to both conditions.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "712832005",
+    "term": "Supine hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.8,
+    "rationale": "Supine hypertension, relevant to the hypertension comorbidity.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.8,
+    "usage_frequency": null
+  },
+  {
+    "code": "19769006",
+    "term": "High-renin essential hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.85,
+    "rationale": "High-renin essential hypertension, relevant to the hypertension comorbidity.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.85,
+    "usage_frequency": null
+  },
+  {
+    "code": "397748008",
+    "term": "Hypertension with albuminuria (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.85,
+    "rationale": "Hypertension with albuminuria, relevant to the hypertension comorbidity and common in diabetes.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.85,
+    "usage_frequency": null
+  },
+  {
+    "code": "16229371000119106",
+    "term": "Labile systemic arterial hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.85,
+    "rationale": "Labile systemic arterial hypertension, relevant to the hypertension comorbidity.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.85,
+    "usage_frequency": null
+  },
+  {
+    "code": "194785008",
+    "term": "Secondary benign hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.85,
+    "rationale": "Secondary benign hypertension, relevant to the hypertension comorbidity.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.85,
+    "usage_frequency": null
+  },
+  {
+    "code": "65518004",
+    "term": "Labile diastolic hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.85,
+    "rationale": "Labile diastolic hypertension, relevant to the hypertension comorbidity.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.85,
+    "usage_frequency": null
+  },
+  {
+    "code": "706882009",
+    "term": "Hypertensive crisis (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.85,
+    "rationale": "Hypertensive crisis, relevant to the hypertension comorbidity.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.85,
+    "usage_frequency": null
+  },
+  {
+    "code": "395204000",
+    "term": "Hyperosmolar non-ketotic state in type 2 diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.95,
+    "rationale": "Hyperosmolar non-ketotic state in Type 2 diabetes, directly relevant as a Type 2 diabetes complication.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "762463000",
+    "term": "Diastolic hypertension co-occurrent with systolic hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.85,
+    "rationale": "Diastolic and systolic hypertension co-occurrence, relevant to the hypertension comorbidity.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.85,
+    "usage_frequency": null
+  },
+  {
+    "code": "123800009",
+    "term": "Goldblatt hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.85,
+    "rationale": "Goldblatt hypertension (renovascular), relevant to the hypertension comorbidity.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.85,
+    "usage_frequency": null
+  },
+  {
+    "code": "132721000119104",
+    "term": "Hypertensive emergency (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.85,
+    "rationale": "Hypertensive emergency, relevant to the hypertension comorbidity.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.85,
+    "usage_frequency": null
+  },
+  {
+    "code": "194791005",
+    "term": "Hypertension caused by drug (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.75,
+    "rationale": "Drug-induced hypertension, relevant to hypertension comorbidity if patient has hypertension diagnosis.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.75,
+    "usage_frequency": null
+  },
+  {
+    "code": "194788005",
+    "term": "Hypertension secondary to endocrine disorder (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.75,
+    "rationale": "Secondary hypertension due to endocrine disorder, relevant to the hypertension comorbidity.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.75,
+    "usage_frequency": null
+  },
+  {
+    "code": "46481004",
+    "term": "Low-renin essential hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.85,
+    "rationale": "Low-renin essential hypertension, relevant to the hypertension comorbidity.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.85,
+    "usage_frequency": null
+  },
+  {
+    "code": "73410007",
+    "term": "Benign secondary renovascular hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.85,
+    "rationale": "Benign secondary renovascular hypertension, relevant to the hypertension comorbidity.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.85,
+    "usage_frequency": null
+  },
+  {
+    "code": "194783001",
+    "term": "Secondary malignant renovascular hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.85,
+    "rationale": "Secondary malignant renovascular hypertension, relevant to the hypertension comorbidity.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.85,
+    "usage_frequency": null
+  },
+  {
+    "code": "720568003",
+    "term": "Brachydactyly and arterial hypertension syndrome (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.95,
+    "rationale": "Brachydactyly and arterial hypertension syndrome is a rare genetic disorder unrelated to type 2 diabetes or essential hypertension.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "845891000000103",
+    "term": "Hypertension resistant to drug therapy (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.95,
+    "rationale": "Resistant hypertension is a relevant comorbidity code for type 2 diabetes management.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "14973001",
+    "term": "Renal sclerosis with hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.9,
+    "rationale": "Renal sclerosis with hypertension is secondary hypertension due to renal disease, not primary essential hypertension.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.9,
+    "usage_frequency": null
+  },
+  {
+    "code": "57684003",
+    "term": "Parenchymal renal hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.9,
+    "rationale": "Parenchymal renal hypertension is secondary hypertension from renal disease, not primary essential hypertension.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.9,
+    "usage_frequency": null
+  },
+  {
+    "code": "8762007",
+    "term": "Chronic hypertension in obstetric context (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.95,
+    "rationale": "Chronic hypertension in obstetric context is specific to pregnancy and not relevant to general type 2 diabetes management.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "427889009",
+    "term": "Hypertension associated with transplantation (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.9,
+    "rationale": "Hypertension associated with transplantation is a specific secondary hypertension in transplant patients, not primary hypertension.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.9,
+    "usage_frequency": null
+  },
+  {
+    "code": "72022006",
+    "term": "Essential hypertension in obstetric context (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.95,
+    "rationale": "Essential hypertension in obstetric context is specific to pregnancy and not relevant to general type 2 diabetes management.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "1078301000112109",
+    "term": "Multiple drug intolerant hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "uncertain",
+    "confidence": 0.6,
+    "rationale": "Multiple drug intolerant hypertension could represent a relevant comorbidity but is a subset condition requiring clinical judgement.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.6,
+    "usage_frequency": null
+  },
+  {
+    "code": "81626002",
+    "term": "Malignant hypertension in obstetric context (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.95,
+    "rationale": "Malignant hypertension in obstetric context is specific to pregnancy and not relevant to general type 2 diabetes management.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "1208839002",
+    "term": "Secondary hypertension due to renal tubular disorder (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.9,
+    "rationale": "Secondary hypertension due to renal tubular disorder is specific secondary hypertension, not primary essential hypertension.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.9,
+    "usage_frequency": null
+  },
+  {
+    "code": "111438007",
+    "term": "Hypertension secondary to renal disease in obstetric context (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.9,
+    "rationale": "Hypertension secondary to renal disease in obstetric context combines obstetric specificity with secondary hypertension.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.9,
+    "usage_frequency": null
+  },
+  {
+    "code": "791000119109",
+    "term": "Angina associated with type II diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.9,
+    "rationale": "Angina associated with type II diabetes mellitus is a relevant cardiovascular complication of type 2 diabetes.",
+    "sources": [
+      "OMOPHub",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.9,
+    "usage_frequency": null
+  },
+  {
+    "code": "111307005",
+    "term": "Leprechaunism syndrome (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.95,
+    "rationale": "Leprechaunism syndrome is a rare congenital disorder unrelated to type 2 diabetes mellitus.",
+    "sources": [
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "111556005",
+    "term": "Ketoacidosis without coma due to diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.95,
+    "rationale": "Ketoacidosis is characteristic of type 1 diabetes, not type 2 diabetes mellitus.",
+    "sources": [
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "126534007",
+    "term": "Mixed sensorimotor polyneuropathy co-occurrent and due to diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.95,
+    "rationale": "Sensorimotor polyneuropathy due to diabetes mellitus is a common complication of type 2 diabetes.",
+    "sources": [
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "127012008",
+    "term": "Lipoatrophic diabetes (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.95,
+    "rationale": "Lipoatrophic diabetes is a rare form of diabetes unrelated to typical type 2 diabetes.",
+    "sources": [
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "127013003",
+    "term": "Disorder of kidney co-occurrent and due to diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.95,
+    "rationale": "Disorder of kidney due to diabetes mellitus is a relevant diabetic complication for type 2 diabetes.",
+    "sources": [
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "127014009",
+    "term": "Peripheral angiopathy due to diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "decision": "include",
+    "confidence": 0.95,
+    "rationale": "Peripheral angiopathy due to diabetes mellitus is a common macrovascular complication of type 2 diabetes.",
+    "sources": [
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  },
+  {
+    "code": "170766006",
+    "term": "Loss of hypoglycemic warning due to diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.8,
+    "rationale": "Loss of hypoglycemic warning is primarily associated with type 1 diabetes and intensive insulin therapy, not typical type 2 diabetes.",
+    "sources": [
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.8,
+    "usage_frequency": null
+  },
+  {
+    "code": "190406000",
+    "term": "Malnutrition-related diabetes mellitus with ketoacidosis (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "exclude",
+    "confidence": 0.95,
+    "rationale": "Malnutrition-related diabetes mellitus is a distinct form of diabetes unrelated to type 2 diabetes.",
+    "sources": [
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.95,
+    "usage_frequency": null
+  }
+]

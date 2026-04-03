@@ -1,0 +1,1418 @@
+[
+  {
+    "code": "73211009",
+    "term": "Diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9492,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 3
+  },
+  {
+    "code": "8801005",
+    "term": "Secondary diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9211,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 3
+  },
+  {
+    "code": "237601000",
+    "term": "Secondary endocrine diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8873,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 3
+  },
+  {
+    "code": "10725009",
+    "term": "Benign hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8762,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OMOPHub",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 3
+  },
+  {
+    "code": "314903002",
+    "term": "Type II diabetes mellitus with arthropathy (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8494,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OMOPHub",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 3
+  },
+  {
+    "code": "1201005",
+    "term": "Benign essential hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8454,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OMOPHub",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 3
+  },
+  {
+    "code": "385041000000108",
+    "term": "Diabetes mellitus with multiple complications (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8451,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 3
+  },
+  {
+    "code": "111552007",
+    "term": "Diabetes mellitus without complication (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8334,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 3
+  },
+  {
+    "code": "5368009",
+    "term": "Drug-induced diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8307,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 3
+  },
+  {
+    "code": "11530004",
+    "term": "Brittle diabetes mellitus (finding)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8303,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 3
+  },
+  {
+    "code": "51002006",
+    "term": "Diabetes mellitus associated with pancreatic disease (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8294,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 3
+  },
+  {
+    "code": "71874008",
+    "term": "Benign essential hypertension complicating AND/OR reason for care during childbirth (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null,
+    "sources": [
+      "OMOPHub",
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 3
+  },
+  {
+    "code": "23717007",
+    "term": "Benign essential hypertension complicating AND/OR reason for care during pregnancy (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null,
+    "sources": [
+      "OMOPHub",
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 3
+  },
+  {
+    "code": "35303009",
+    "term": "Benign essential hypertension complicating AND/OR reason for care during puerperium (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null,
+    "sources": [
+      "OMOPHub",
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 3
+  },
+  {
+    "code": "198942000",
+    "term": "Benign essential hypertension complicating pregnancy, childbirth and the puerperium (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null,
+    "sources": [
+      "OMOPHub",
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 3
+  },
+  {
+    "code": "63287004",
+    "term": "Benign essential hypertension in obstetric context (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null,
+    "sources": [
+      "OMOPHub",
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 3
+  },
+  {
+    "code": "44054006",
+    "term": "Diabetes mellitus type 2 (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9957,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "443694000",
+    "term": "Type II diabetes mellitus uncontrolled (finding)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9665,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "237599002",
+    "term": "Insulin treated type 2 diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9626,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "46635009",
+    "term": "Diabetes mellitus type 1 (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9582,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "56218007",
+    "term": "Systolic hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9426,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "444073006",
+    "term": "Type I diabetes mellitus uncontrolled (finding)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9369,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "1481000119100",
+    "term": "Diabetes mellitus type 2 without retinopathy (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9356,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "31992008",
+    "term": "Secondary hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.93,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "190389009",
+    "term": "Type II diabetes mellitus with ulcer (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9244,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "59621000",
+    "term": "Essential hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9209,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "445353002",
+    "term": "Brittle type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9151,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OMOPHub"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "422014003",
+    "term": "Disorder due to type 2 diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9119,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "190368000",
+    "term": "Type I diabetes mellitus with ulcer (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9097,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "313436004",
+    "term": "Type II diabetes mellitus without complication (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9067,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "48146000",
+    "term": "Diastolic hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9057,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "429457004",
+    "term": "Systolic essential hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.9015,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "290002008",
+    "term": "Brittle type I diabetes mellitus (finding)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8925,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "313435000",
+    "term": "Type I diabetes mellitus without complication (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8911,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "190388001",
+    "term": "Type II diabetes mellitus with multiple complications (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8904,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "421750000",
+    "term": "Ketoacidosis in type II diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8897,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "863191000000102",
+    "term": "Nocturnal hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8891,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "420715001",
+    "term": "Persistent microalbuminuria associated with type II diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8867,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "401110002",
+    "term": "Type 1 diabetes mellitus with persistent microalbuminuria (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8856,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "703138006",
+    "term": "Type II diabetes mellitus in remission (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8838,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "421631007",
+    "term": "Gangrene associated with type II diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8817,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "70272006",
+    "term": "Malignant hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8812,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "28119000",
+    "term": "Renal hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8796,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "420868002",
+    "term": "Disorder due to type 1 diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8779,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "190369008",
+    "term": "Type I diabetes mellitus with gangrene (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8704,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "74451002",
+    "term": "Secondary diastolic hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8695,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "314902007",
+    "term": "Type 2 diabetes mellitus with peripheral angiopathy (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.868,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "422228004",
+    "term": "Multiple complications of type I diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8662,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "39018007",
+    "term": "Renal arterial hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8607,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "420270002",
+    "term": "Ketoacidosis in type I diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8596,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "123799005",
+    "term": "Renovascular hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8583,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "703137001",
+    "term": "Type I diabetes mellitus in remission (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8568,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "38341003",
+    "term": "Hypertensive disorder, systemic arterial (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8568,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "314771006",
+    "term": "Type I diabetes mellitus with hypoglycemic coma (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8564,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "739681000",
+    "term": "Disorder of eye co-occurrent and due to type 1 diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8555,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "78975002",
+    "term": "Malignant essential hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8543,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "59720008",
+    "term": "Sustained diastolic hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8529,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "420825003",
+    "term": "Gangrene associated with type I diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8527,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "421847006",
+    "term": "Ketoacidotic coma in type II diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8515,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "371125006",
+    "term": "Labile essential hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8465,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "1217044000",
+    "term": "Ketosis-resistant diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8455,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (nhsd-primary-care-domain-refsets)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "84094009",
+    "term": "Rebound hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8444,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "89242004",
+    "term": "Malignant secondary hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8416,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "71421000119105",
+    "term": "Hypertension in chronic kidney disease due to type 2 diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8403,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "712832005",
+    "term": "Supine hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8375,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "19769006",
+    "term": "High-renin essential hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8373,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "397748008",
+    "term": "Hypertension with albuminuria (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8371,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "16229371000119106",
+    "term": "Labile systemic arterial hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8333,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "194785008",
+    "term": "Secondary benign hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8325,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "65518004",
+    "term": "Labile diastolic hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8305,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "706882009",
+    "term": "Hypertensive crisis (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8283,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "395204000",
+    "term": "Hyperosmolar non-ketotic state in type 2 diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8256,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "762463000",
+    "term": "Diastolic hypertension co-occurrent with systolic hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8183,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "123800009",
+    "term": "Goldblatt hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8109,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "132721000119104",
+    "term": "Hypertensive emergency (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8103,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "194791005",
+    "term": "Hypertension caused by drug (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8078,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "194788005",
+    "term": "Hypertension secondary to endocrine disorder (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8069,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "46481004",
+    "term": "Low-renin essential hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8058,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "73410007",
+    "term": "Benign secondary renovascular hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.8055,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "194783001",
+    "term": "Secondary malignant renovascular hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.803,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "720568003",
+    "term": "Brachydactyly and arterial hypertension syndrome (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.7973,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "845891000000103",
+    "term": "Hypertension resistant to drug therapy (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.7888,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "14973001",
+    "term": "Renal sclerosis with hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.7673,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "57684003",
+    "term": "Parenchymal renal hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.7604,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "8762007",
+    "term": "Chronic hypertension in obstetric context (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.7545,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "427889009",
+    "term": "Hypertension associated with transplantation (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.7496,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "72022006",
+    "term": "Essential hypertension in obstetric context (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.7484,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "1078301000112109",
+    "term": "Multiple drug intolerant hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.7452,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "81626002",
+    "term": "Malignant hypertension in obstetric context (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.7443,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "1208839002",
+    "term": "Secondary hypertension due to renal tubular disorder (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.7442,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "111438007",
+    "term": "Hypertension secondary to renal disease in obstetric context (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (Bennett Institute)",
+    "domain": "Condition",
+    "similarity_score": 0.7431,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "791000119109",
+    "term": "Angina associated with type II diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null,
+    "sources": [
+      "OMOPHub",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "111307005",
+    "term": "Leprechaunism syndrome (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "111556005",
+    "term": "Ketoacidosis without coma due to diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "126534007",
+    "term": "Mixed sensorimotor polyneuropathy co-occurrent and due to diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "127012008",
+    "term": "Lipoatrophic diabetes (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "127013003",
+    "term": "Disorder of kidney co-occurrent and due to diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "127014009",
+    "term": "Peripheral angiopathy due to diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "170766006",
+    "term": "Loss of hypoglycemic warning due to diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  },
+  {
+    "code": "190406000",
+    "term": "Malnutrition-related diabetes mellitus with ketoacidosis (disorder)",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null,
+    "sources": [
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "source_count": 2
+  }
+]

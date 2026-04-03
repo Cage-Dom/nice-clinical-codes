@@ -1,0 +1,452 @@
+[
+  {
+    "code": "103981000119101",
+    "term": "Proliferative retinopathy following surgery due to diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "104031000000108",
+    "term": "Secondary pancreatic diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "105401000119101",
+    "term": "Diabetes mellitus due to pancreatic injury",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "106281000119103",
+    "term": "Pre-existing diabetes mellitus in mother complicating childbirth",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "1102351000000105",
+    "term": "Ketosis-prone diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "111307005",
+    "term": "Leprechaunism syndrome",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "111552007",
+    "term": "Diabetes mellitus without complication",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "111556005",
+    "term": "Ketoacidosis without coma due to diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "112991000000101",
+    "term": "Lipoatrophic diabetes mellitus without complication",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "1142044000",
+    "term": "Pre-existing malnutrition-related diabetes mellitus in pregnancy",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "1144894004",
+    "term": "Peripheral autonomic neuropathy due to diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "11530004",
+    "term": "Brittle diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "1172389004",
+    "term": "Disorder due to malnutrition related diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "1217044000",
+    "term": "Ketosis-resistant diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "1217674007",
+    "term": "Neurotrophic keratitis due to diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "122411000000108",
+    "term": "Secondary pancreatic diabetes mellitus without complication",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "122481000000101",
+    "term": "Fibrocalculous pancreatic diabetes",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "122961000000101",
+    "term": "Secondary pancreatic diabetes mellitus without complication",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "1231625008",
+    "term": "Tractional retinal detachment due to proliferative diabetic retinopathy",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "1231650006",
+    "term": "Combined rhegmatogenous and tractional retinal detachment due to proliferative diabetic retinopathy",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "1231691008",
+    "term": "Vitreous hemorrhage due to proliferative diabetic retinopathy",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "1231698002",
+    "term": "Tractional retinal detachment with macula involvement due to proliferative diabetic retinopathy",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "123763000",
+    "term": "Houssay's syndrome",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "1251386008",
+    "term": "Disorder of skin due to diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "1259048007",
+    "term": "Lesion of brachial plexus due to diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "126534007",
+    "term": "Mixed sensorimotor polyneuropathy due to diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "126535008",
+    "term": "Motor polyneuropathy due to diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "127011001",
+    "term": "Sensory neuropathy due to diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "127012008",
+    "term": "Lipoatrophic diabetes",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "127013003",
+    "term": "Disorder of kidney due to diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "127014009",
+    "term": "Peripheral angiopathy due to diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "1285518004",
+    "term": "Wolfram syndrome type 1",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "1285519007",
+    "term": "Wolfram syndrome type 2",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "138811000119100",
+    "term": "Complication due to secondary diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "16890881000119106",
+    "term": "History of proliferative retinopathy due to diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "170745003",
+    "term": "Diabetic on diet only",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "170747006",
+    "term": "Diabetic on insulin",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "170763003",
+    "term": "Diabetic - good control",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "170766006",
+    "term": "Loss of hypoglycemic warning due to diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "1771691000000102",
+    "term": "Ulcer of foot due to diabetes mellitus in remission",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "1771701000000102",
+    "term": "Ulcer of right foot due to diabetes mellitus in remission",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "1771711000000100",
+    "term": "Ulcer of left foot due to diabetes mellitus in remission",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "190329007",
+    "term": "Diabetes mellitus with hyperosmolar coma",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "190406000",
+    "term": "Ketoacidosis due to malnutrition related diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "190407009",
+    "term": "Malnutrition-related diabetes mellitus with renal complications",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "190410002",
+    "term": "Malnutrition-related diabetes mellitus with peripheral circulatory complications",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "190411003",
+    "term": "Multiple complications due to malnutrition related diabetes",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "190412005",
+    "term": "Malnutrition-related diabetes mellitus without complications",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "190416008",
+    "term": "Steroid-induced diabetes mellitus without complication",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "190447002",
+    "term": "Steroid-induced diabetes",
+    "vocabulary": "SNOMED CT",
+    "source": "OpenCodelists (nhsd-primary-care-domain-refsets)",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "code": "73211009",
+    "term": "Diabetes mellitus (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "uncertain",
+    "confidence": 0.5,
+    "rationale": "Generic diabetes mellitus code that could include type 1, type 2, or other types; too broad without type-specific qualification for a type 2 diabetes-focused list.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (nhsd-primary-care-domain-refsets)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.5,
+    "usage_frequency": null
+  },
+  {
+    "code": "863191000000102",
+    "term": "Nocturnal hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "uncertain",
+    "confidence": 0.6,
+    "rationale": "Nocturnal hypertension is a specific hypertension phenotype; relevance depends on whether phenotype-specific hypertension codes should be included.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.6,
+    "usage_frequency": null
+  },
+  {
+    "code": "703138006",
+    "term": "Type II diabetes mellitus in remission (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "uncertain",
+    "confidence": 0.6,
+    "rationale": "Type II diabetes mellitus in remission indicates resolved diabetes; codes for resolved conditions are typically excluded unless the query specifically includes remission status.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (qcovid)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.6,
+    "usage_frequency": null
+  },
+  {
+    "code": "1217044000",
+    "term": "Ketosis-resistant diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "decision": "uncertain",
+    "confidence": 0.6,
+    "rationale": "Ketosis-resistant diabetes is typically Type 2 diabetes (MODY), but unclear if MODY should be included in a primary Type 2 diabetes list.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "OpenCodelists (nhsd-primary-care-domain-refsets)"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.6,
+    "usage_frequency": null
+  },
+  {
+    "code": "1078301000112109",
+    "term": "Multiple drug intolerant hypertension (disorder)",
+    "vocabulary": "SNOMED CT",
+    "decision": "uncertain",
+    "confidence": 0.6,
+    "rationale": "Multiple drug intolerant hypertension could represent a relevant comorbidity but is a subset condition requiring clinical judgement.",
+    "sources": [
+      "OpenCodelists (Bennett Institute)",
+      "QOF Business Rules 2024-25"
+    ],
+    "classifier_score": null,
+    "llm_score": 0.6,
+    "usage_frequency": null
+  }
+]

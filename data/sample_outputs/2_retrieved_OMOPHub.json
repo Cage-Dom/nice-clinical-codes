@@ -1,0 +1,452 @@
+[
+  {
+    "code": "9859006",
+    "term": "Acanthosis nigricans due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "721284006",
+    "term": "Acidosis due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "791000119109",
+    "term": "Angina associated with type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "87441000119104",
+    "term": "Ankle ulcer due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "314903002",
+    "term": "Arthropathy due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "772788006",
+    "term": "Assessment of risk of type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Procedure",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "712883005",
+    "term": "Autonomic neuropathy due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "60951000119105",
+    "term": "Blindness due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "445353002",
+    "term": "Brittle type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "771000119108",
+    "term": "Chronic kidney disease due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "751000119104",
+    "term": "Chronic kidney disease stage 1 due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "741000119101",
+    "term": "Chronic kidney disease stage 2 due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "1332470007",
+    "term": "Chronic kidney disease stage 3A due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "1332469006",
+    "term": "Chronic kidney disease stage 3B due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "731000119105",
+    "term": "Chronic kidney disease stage 3 due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "721000119107",
+    "term": "Chronic kidney disease stage 4 due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "711000119100",
+    "term": "Chronic kidney disease stage 5 due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "16891151000119103",
+    "term": "Coronary artery disease due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "87921000119104",
+    "term": "Cranial nerve palsy due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "1531000119102",
+    "term": "Dermopathy due to type 2 diabetes mellitus",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "E11",
+    "term": "Type 2 diabetes mellitus",
+    "vocabulary": "ICD-10 (WHO)",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "E11.0",
+    "term": "Type 2 diabetes mellitus, with coma",
+    "vocabulary": "ICD-10 (WHO)",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "E11.1",
+    "term": "Type 2 diabetes mellitus, with ketoacidosis",
+    "vocabulary": "ICD-10 (WHO)",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "E11.7",
+    "term": "Type 2 diabetes mellitus, with multiple complications",
+    "vocabulary": "ICD-10 (WHO)",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "E11.4",
+    "term": "Type 2 diabetes mellitus, with neurological complications",
+    "vocabulary": "ICD-10 (WHO)",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "E11.3",
+    "term": "Type 2 diabetes mellitus, with ophthalmic complications",
+    "vocabulary": "ICD-10 (WHO)",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "E11.6",
+    "term": "Type 2 diabetes mellitus, with other specified complications",
+    "vocabulary": "ICD-10 (WHO)",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "E11.9",
+    "term": "Type 2 diabetes mellitus, without complications",
+    "vocabulary": "ICD-10 (WHO)",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "E11.5",
+    "term": "Type 2 diabetes mellitus, with peripheral circulatory complications",
+    "vocabulary": "ICD-10 (WHO)",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "E11.2",
+    "term": "Type 2 diabetes mellitus, with renal complications",
+    "vocabulary": "ICD-10 (WHO)",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "E11.8",
+    "term": "Type 2 diabetes mellitus, with unspecified complications",
+    "vocabulary": "ICD-10 (WHO)",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "16756008",
+    "term": "Albuminuria in pregnancy without hypertension",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "763007002",
+    "term": "Assessment using CHADS2 (congestive heart failure, hypertension, age 75 years or older, diabetes mellitus and previous stroke or transient ischemic attack) score",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Measurement",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "708018005",
+    "term": "Assessment using congestive heart failure, hypertension, age 2, diabetes mellitus, stroke 2 - vascular disease, age, sex category score",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Measurement",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "794231000000107",
+    "term": "Assessment using HAS-BLED (hypertension, abnormal renal and/or liver function, stroke, bleeding history or predisposition, labile INR (international normalised ratio), elderly over 65, and drugs and/or alcohol concomitantly) score",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Procedure",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "704182008",
+    "term": "Assessment using hypertension, abnormal renal/liver function, stroke, bleeding history or predisposition, labile international normalized ratio, elderly over 65, and drugs/alcohol concomitantly score",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Measurement",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "697902002",
+    "term": "Associated pulmonary arterial hypertension",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "703310005",
+    "term": "Autosomal dominant progressive nephropathy with hypertension",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "1201005",
+    "term": "Benign essential hypertension",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "71874008",
+    "term": "Benign essential hypertension complicating AND/OR reason for care during childbirth",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "23717007",
+    "term": "Benign essential hypertension complicating AND/OR reason for care during pregnancy",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "35303009",
+    "term": "Benign essential hypertension complicating AND/OR reason for care during puerperium",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "198942000",
+    "term": "Benign essential hypertension complicating pregnancy, childbirth and the puerperium",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "63287004",
+    "term": "Benign essential hypertension in obstetric context",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "10725009",
+    "term": "Benign hypertension",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "68267002",
+    "term": "Benign intracranial hypertension",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "1263549001",
+    "term": "Benign intracranial hypertension due to anemia",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "698838008",
+    "term": "Benign intracranial hypertension due to drug",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "1263546008",
+    "term": "Benign intracranial hypertension due to endocrine disease",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  },
+  {
+    "code": "698839000",
+    "term": "Benign intracranial hypertension due to hypervitaminosis A",
+    "vocabulary": "SNOMED CT",
+    "source": "OMOPHub",
+    "domain": "Condition",
+    "similarity_score": null,
+    "usage_frequency": null
+  }
+]
