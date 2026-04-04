@@ -12,7 +12,10 @@ def build_prompt(condition: str) -> list:
     """Build the structured prompt for ollama call"""
     system_content = ("You are a clinical coding assistant.\n\n"
         "TASK:\n"
-        "Return SNOMED CT and ICD-10 codes for a condition.\n\n"
+        "Return clinical codes (default to SNOMED CT and ICD-10 unless \n"
+                      "specified single vocabulary) for a condition. provide \n"
+                      "a confidence score (0-1) and a 1-sentence \n\n"
+                      "rationale for each decision\n\n"
         "OUTPUT RULES:\n"
         "1. Output ONLY valid JSON.\n"
         "2. Output MUST be a JSON array.\n"
@@ -21,13 +24,13 @@ def build_prompt(condition: str) -> list:
         '   "term": string,\n'
         '   "vocabulary": string,\n'
         '   "Decision": null,\n'
-        '   "Confidence": null,\n'
-        '   "rationale": null,\n'
+        '   "Confidence": float,\n'
+        '   "rationale": string,\n'
         '   "sources": ["Phi-4-mini"],\n'
         '   "classifier_score": null,\n'
         '   "llm_score": null,\n'
         '   "usage_frequency": null\n'
-        "4. vocabulary MUST be either 'SNOMED CT' or 'ICD-10'.\n"
+        "4. vocabulary MUST be valid in the UK.\n"
         "5. Do NOT group by vocabulary.\n"
         "6. Do NOT use nested objects.\n"
         "7. Do NOT include any text outside JSON.\n\n"
@@ -38,8 +41,8 @@ def build_prompt(condition: str) -> list:
         '    "term": "Type 2 diabetes mellitus without complications",\n'
         '    "vocabulary": "ICD-10",\n'
         '    "Decision": null,\n'
-        '    "Confidence": null,\n'
-        '    "rationale": null,\n'
+        '    "Confidence": 0.95,\n'
+        '    "rationale": "Indicates a diagnosis of type 2 diabetes with no specified diabetic-related conditions.",\n'
         '    "sources": ["Phi-4-mini"],\n'
         '    "classifier_score": null,\n'
         '    "llm_score": null,\n'
