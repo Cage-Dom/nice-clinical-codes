@@ -10,6 +10,7 @@ from app.graph.nodes.chroma_retriever import retrieve_from_chromadb
 from app.graph.nodes.qof_retriever import retrieve_from_qof
 from app.graph.nodes.opencodelists_retriever import retrieve_from_opencodelists
 from app.graph.nodes.result_merger import merge_and_dedup
+from app.graph.nodes.umls_enrichment_node import enrich_with_umls
 from app.graph.nodes.llm_reasoning import score_codes
 from app.graph.nodes.output_assembly import assemble_output
 
@@ -58,6 +59,7 @@ def build_graph() -> StateGraph:
     graph.add_node("qof_retriever", retrieve_from_qof)
     graph.add_node("opencodelists_retriever", retrieve_from_opencodelists)
     graph.add_node("result_merger", merge_and_dedup)
+    graph.add_node("umls_enrichment", enrich_with_umls)
     graph.add_node("llm_reasoning", score_codes)
     graph.add_node("output_assembly", assemble_output)
 
@@ -76,8 +78,9 @@ def build_graph() -> StateGraph:
     graph.add_edge("qof_retriever", "result_merger")
     graph.add_edge("opencodelists_retriever", "result_merger")
 
-    # sequential: merger → reasoning → output → END
-    graph.add_edge("result_merger", "llm_reasoning")
+    # sequential: merger → UMLS enrichment → reasoning → output → END
+    graph.add_edge("result_merger", "umls_enrichment")
+    graph.add_edge("umls_enrichment", "llm_reasoning")
     graph.add_edge("llm_reasoning", "output_assembly")
     graph.add_edge("output_assembly", END)
 
