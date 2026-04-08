@@ -17,6 +17,8 @@ FROM base AS ingest
 
 WORKDIR /app
 
+ENV HF_HOME=/app/hf_cache
+
 COPY backend/app/ app/
 COPY data/raw/ data/raw/
 COPY data/opcs/ data/opcs/
@@ -35,7 +37,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libgomp1 \
     && rm -rf /var/lib/apt/lists/*
 
-RUN addgroup --system app && adduser --system --ingroup app app
+RUN addgroup --system app && adduser --system --ingroup app --home /home/app app
+
+ENV HF_HOME=/app/hf_cache
 
 COPY --from=base /usr/local/lib/python3.12/site-packages /usr/local/lib/python3.12/site-packages
 COPY --from=base /usr/local/bin/uvicorn /usr/local/bin/uvicorn
@@ -45,6 +49,7 @@ COPY --chown=app:app backend/app/ app/
 # Pre-built databases from ingestion stage
 COPY --from=ingest --chown=app:app /app/data/codes.db data/codes.db
 COPY --from=ingest --chown=app:app /app/chromadb_data/ chromadb_data/
+COPY --from=ingest --chown=app:app /app/hf_cache/ hf_cache/
 
 USER app
 
