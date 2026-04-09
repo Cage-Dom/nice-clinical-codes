@@ -103,6 +103,10 @@ def score_codes(state: dict) -> dict:
     conditions = state.get("parsed_conditions", [])
     query = state.get("raw_query", "")
 
+    # stabilise order so batches are identical across runs
+    # (UMLS ThreadPoolExecutor returns results in non-deterministic order)
+    codes = sorted(codes, key=lambda c: (c.get("vocabulary", ""), c.get("code", "")))
+
     if not codes:
         return {"scored_codes": [], "ambiguous_codes": []}
 
