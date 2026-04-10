@@ -1,8 +1,16 @@
-# NICE Clinical Code List Generator
+<p align="center">
+  <img src="assets/logo-cambridge.png" alt="University of Cambridge" height="100">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/logo-nice.png" alt="NICE" height="60">
+</p>
 
-Tool for generating and validating clinical code lists (SNOMED CT, ICD-10) from public NHS data sources. Built for the NICE healthcare data analytics team.
+# NICE Clinical Code Discovery — Multi-Agent Agentic AI RAG System
 
-Given a clinical condition (e.g. "type 2 diabetes with hypertension"), the tool retrieves relevant codes from multiple public sources, enriches them with UMLS relationships, scores each code for inclusion/exclusion, and presents the results with full provenance.
+**Live:** [clinicalcodes.uk](https://clinicalcodes.uk)
+
+Agentic AI system that autonomously discovers, enriches, and validates clinical codes (SNOMED CT, ICD-10, OPCS-4) for NICE (National Institute for Health and Care Excellence). Built as a multi-agent RAG pipeline orchestrated by LangGraph, with parallel autonomous retrieval from five NHS data sources, UMLS knowledge graph expansion, and Claude-powered clinical reasoning.
+
+Given a clinical condition (e.g. "type 2 diabetes with hypertension"), the system deploys specialised agents to retrieve candidate codes in parallel, merges and deduplicates across sources, expands coverage via UMLS synonym and hierarchical relationships, then applies LLM-based clinical reasoning to score each code for inclusion/exclusion — delivering a validated code list with full provenance in under 60 seconds.
 
 ## Architecture
 
@@ -33,13 +41,15 @@ User → Frontend (Next.js)
 
 ## Tech Stack
 
-- **Backend:** Python, FastAPI, LangGraph
-- **Frontend:** Next.js, TypeScript, Tailwind CSS
-- **Vector DB:** ChromaDB with PubMedBERT embeddings
-- **LLM:** Claude API (Anthropic)
-- **ML:** scikit-learn (code relevance classifier)
-- **Data:** QOF business rules, OpenCodelists, OPCS-4 procedures, UMLS
-- **Deployment:** AWS ECS Fargate, Docker
+- **Agent Orchestration:** LangGraph (multi-agent StateGraph with parallel fan-out)
+- **LLM:** Claude API — Sonnet for query parsing, Haiku for high-throughput scoring
+- **Backend:** Python, FastAPI, async pipeline execution
+- **Frontend:** Next.js 16, TypeScript, Tailwind CSS
+- **Vector DB:** ChromaDB with PubMedBERT biomedical embeddings
+- **Knowledge Graph:** UMLS Metathesaurus (synonym, narrower, sibling expansion)
+- **Data Sources:** QOF Business Rules, OpenCodelists, OPCS-4, OMOPHub, UMLS (35K+ codes)
+- **Deployment:** AWS ECS Fargate, ECR, ALB, ACM, Route 53 — [clinicalcodes.uk](https://clinicalcodes.uk)
+- **Cost:** ~$0.03/query (95% reduction from $0.67 through model selection and candidate capping)
 
 ## Getting Started
 
@@ -177,8 +187,14 @@ The Docker build runs data ingestion automatically — no manual step needed. SQ
 
 ## Team
 
-Cambridge University Data Science Career Accelerator — Group 3
+University of Cambridge Data Science (PACE), developed in collaboration with NICE (National Institute for Health and Care Excellence).
 
+- **Carlos Ramirez** — Engineering Lead (pipeline architecture, multi-agent system, AWS deployment)
+- **Anna Deluca** — Evaluation & Quality Assurance
+- **Dom Cage** — Project Manager & Baseline Integration
+- **Ash** — Research & Data Analysis
+- **Ish** — Research
+- **Zhao** — Research
 ## License
 
 MIT
