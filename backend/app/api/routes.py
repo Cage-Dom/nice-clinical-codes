@@ -169,9 +169,14 @@ async def evaluate_codes(request: EvaluateRequest):
         raise HTTPException(status_code=500, detail="Pipeline processing failed")
 
     final_codes = pipeline_result.get("final_code_list", [])
-    search_response = {"results": final_codes}
+    retrieved_codes = pipeline_result.get("retrieved_codes", [])
+    enriched_codes = pipeline_result.get("enriched_codes", [])
 
-    eval_result = run_evaluation(test_set, search_response)
+    eval_result = run_evaluation(test_set, {
+        "results": final_codes,
+        "retrieved_codes": retrieved_codes,
+        "enriched_codes": enriched_codes,
+    })
     eval_result["elapsed_seconds"] = round(time.time() - t0, 2)
     eval_result["pipeline_results_count"] = len(final_codes)
 

@@ -104,6 +104,10 @@ def run_evaluation(
     excluded = [c for c in scored if c.get("decision") == "exclude"]
     uncertain = [c for c in scored if c.get("decision") == "uncertain"]
 
+    # Intermediate pipeline stages
+    retrieved = pipeline_results.get("retrieved_codes", [])
+    enriched = pipeline_results.get("enriched_codes", [])
+
     # Evaluate different views
     results = {
         "reference_count": len(ref_codes),
@@ -111,6 +115,16 @@ def run_evaluation(
         "vocabulary": test_set[0].get("Codelist_vocabulary", ""),
         "stages": {},
     }
+
+    # Retrieved (pre-merge, all raw retriever output)
+    if retrieved:
+        m_ret = evaluate_codelist(ref_codes, retrieved, "retrieved_raw")
+        results["stages"]["retrieved_raw"] = _metrics_to_dict(m_ret)
+
+    # Merged + UMLS enriched (post-dedup, pre-LLM)
+    if enriched:
+        m_enr = evaluate_codelist(ref_codes, enriched, "merged_enriched")
+        results["stages"]["merged_enriched"] = _metrics_to_dict(m_enr)
 
     # All scored (full pipeline output)
     m_all = evaluate_codelist(ref_codes, scored, "all_scored")
