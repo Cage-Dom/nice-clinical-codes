@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="assets/logo-cambridge.png" alt="University of Cambridge" height="100">
+  <img src="assets/logo-cam-pace.svg" alt="University of Cambridge" height="70">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="assets/logo-nice.png" alt="NICE" height="60">
 </p>
 
-# NICE Clinical Code Discovery — Multi-Agent Agentic AI RAG System
+# NICE Clinical Code Discovery - Multi-Agent Agentic AI RAG System
 
 **Live:** [clinicalcodes.uk](https://clinicalcodes.uk)
 
