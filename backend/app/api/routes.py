@@ -11,6 +11,7 @@ from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, Field
 
 from app.graph.graph import run_pipeline
+from app.evaluation.evaluator import run_evaluation
 
 logger = logging.getLogger(__name__)
 
@@ -139,6 +140,42 @@ async def export_codes(search_id: str, output_format: str = "csv"):
         media_type="text/csv",
         headers={"Content-Disposition": f"attachment; filename=codelist_{search_id}.csv"},
     )
+
+
+class EvaluateRequest(BaseModel):
+    test_set: list[dict] = Field(
+        ...,
+        description="Gold-standard test set in Anna's format: [{Entry_no, Research_question, Codelist, Codelist_terms, Codelist_vocabulary, ...}]",
+    )
+
+
+@router.post("/evaluate")
+async def evaluate_codes(request: EvaluateRequest):
+    """Run the pipeline on a test set query and evaluate against the gold standard."""
+    test_set = request.test_set
+    if not test_set:
+        raise HTTPException(status_code=400, detail="test_set cannot be empty")
+
+    query = test_set[0].get("Research_question", "")
+    if not query:
+        raise HTTPException(status_code=400, detail="No Research_question found in test set")
+
+    t0 = time.time()
+
+    try:
+        pipeline_result = await asyncio.to_thread(run_pipeline, query)
+    except Exception as exc:
+        logger.error("Evaluation pipeline failed: %s", exc)
+        raise HTTPException(status_code=500, detail="Pipeline processing failed")
+
+    final_codes = pipeline_result.get("final_code_list", [])
+    search_response = {"results": final_codes}
+
+    eval_result = run_evaluation(test_set, search_response)
+    eval_result["elapsed_seconds"] = round(time.time() - t0, 2)
+    eval_result["pipeline_results_count"] = len(final_codes)
+
+    return eval_result
 
 
 class ReviewRequest(BaseModel):
