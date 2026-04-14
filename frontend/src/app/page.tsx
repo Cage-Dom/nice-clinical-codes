@@ -175,10 +175,19 @@ export default function Home() {
   const results = response?.results ?? null;
   const summary = response?.summary as Record<string, number> | undefined;
 
+  // UMLS-enriched codes are suggestions (synonym/narrower/sibling expansion from
+  // the UMLS Metathesaurus), not direct retrievals. Route them to the Review tab
+  // regardless of the LLM's decision so reviewers can validate them separately.
+  const isUmlsSuggestion = (r: CodeResult) =>
+    r.sources?.some((s) => s.startsWith("UMLS")) ?? false;
+
   const filteredResults = useMemo(() => {
     if (!results) return [];
     if (decisionFilter === "all") return results;
-    return results.filter((r) => r.decision === decisionFilter);
+    if (decisionFilter === "uncertain") {
+      return results.filter((r) => r.decision === "uncertain" || isUmlsSuggestion(r));
+    }
+    return results.filter((r) => r.decision === decisionFilter && !isUmlsSuggestion(r));
   }, [results, decisionFilter]);
 
   const totalPages = Math.ceil(filteredResults.length / PAGE_SIZE);
@@ -186,11 +195,15 @@ export default function Home() {
 
   const decisionCounts = useMemo(() => {
     if (!results) return { all: 0, include: 0, exclude: 0, uncertain: 0 };
+    const nonUmls = results.filter((r) => !isUmlsSuggestion(r));
+    const reviewCount = results.filter(
+      (r) => r.decision === "uncertain" || isUmlsSuggestion(r)
+    ).length;
     return {
       all: results.length,
-      include: results.filter((r) => r.decision === "include").length,
-      exclude: results.filter((r) => r.decision === "exclude").length,
-      uncertain: results.filter((r) => r.decision === "uncertain").length,
+      include: nonUmls.filter((r) => r.decision === "include").length,
+      exclude: nonUmls.filter((r) => r.decision === "exclude").length,
+      uncertain: reviewCount,
     };
   }, [results]);
 
@@ -294,6 +307,14 @@ export default function Home() {
                       <td className="px-4 py-3 text-gray-600">{r.vocabulary}</td>
                       <td className="px-4 py-3">
                         <DecisionBadge decision={r.decision} />
+                        {isUmlsSuggestion(r) && (
+                          <span
+                            className="ml-1.5 inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-purple-100 text-purple-800 border border-purple-300"
+                            title="Expanded from UMLS — review as a suggestion, not a direct match"
+                          >
+                            Suggested
+                          </span>
+                        )}
                       </td>
                       <td className="px-4 py-3">{Math.round(r.confidence * 100)}%</td>
                       <td className="px-4 py-3 text-gray-600 text-xs">
