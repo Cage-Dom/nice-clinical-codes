@@ -13,14 +13,12 @@ from pydantic import BaseModel, Field
 from app.graph.graph import run_pipeline
 from app.evaluation.evaluator import run_evaluation
 from app.baseline.llm_client import run_baseline
+from app.api import _search_cache
 
 logger = logging.getLogger(__name__)
 
 router = APIRouter()
 
-# in-memory result cache (search_id → results list)
-_result_cache: dict[str, list[dict]] = {}
-MAX_CACHE = 100
 
 
 # Request / Response schemas
@@ -73,9 +71,7 @@ async def search_codes(request: SearchRequest):
     final_codes = result.get("final_code_list", [])
 
     search_id = uuid.uuid4().hex[:12]
-    if len(_result_cache) >= MAX_CACHE:
-        _result_cache.pop(next(iter(_result_cache)))
-    _result_cache[search_id] = final_codes
+    _search_cache.put(search_id, request.query, final_codes)
 
     return SearchResponse(
         search_id=search_id,
@@ -107,9 +103,10 @@ async def export_codes(search_id: str, output_format: str = "csv"):
     if output_format not in ("csv", "xlsx"):
         raise HTTPException(status_code=400, detail="output_format must be 'csv' or 'xlsx'")
 
-    codes = _result_cache.get(search_id)
-    if codes is None:
+    entry = _search_cache.get(search_id)
+    if entry is None:
         raise HTTPException(status_code=404, detail="Search result not found")
+    codes = entry["codes"]
 
     export_fields = ["code", "term", "vocabulary", "decision", "confidence", "rationale", "sources"]
 
