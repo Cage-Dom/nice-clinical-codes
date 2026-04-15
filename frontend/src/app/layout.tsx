@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Lora } from "next/font/google";
 import "./globals.css";
+import { UserBadge } from "./UserBadge";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -75,6 +76,7 @@ export default function RootLayout({
             <span className="px-4 py-2.5 font-semibold">
               Clinical Code List Generator
             </span>
+            <UserBadge />
           </div>
         </nav>
 
