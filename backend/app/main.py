@@ -4,6 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.config import CORS_ORIGINS
 from app.api.routes import router
 from app.api.auth import router as auth_router
+from app.api.codelists import router as codelists_router
 
 app = FastAPI(
     title="NICE Clinical Code List Generator",
@@ -24,6 +25,7 @@ app.add_middleware(
 
 app.include_router(router, prefix="/api")
 app.include_router(auth_router, prefix="/api")
+app.include_router(codelists_router, prefix="/api")
 
 
 @app.get("/health")
