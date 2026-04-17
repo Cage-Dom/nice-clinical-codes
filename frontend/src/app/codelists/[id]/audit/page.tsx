@@ -36,20 +36,28 @@ export default function AuditPage({
 
   useEffect(() => {
     if (!user) return;
+    let cancelled = false;
     setLoading(true);
     Promise.all([getCodelist(id), getAudit(id)])
       .then(([cl, a]) => {
+        if (cancelled) return;
         setCodelist(cl);
         setEvents(a);
       })
-      .catch((e) => setError(String(e)))
-      .finally(() => setLoading(false));
+      .catch((e) => { if (!cancelled) setError(String(e)); })
+      .finally(() => { if (!cancelled) setLoading(false); });
+    return () => { cancelled = true; };
   }, [user, id]);
 
-  if (!user) return null;
-  if (loading) {
-    return <div className="max-w-4xl mx-auto px-6 py-8 text-sm text-gray-500">Loading…</div>;
-  }
+  if (!user || loading) return (
+    <div className="max-w-4xl mx-auto px-6 py-8 animate-pulse">
+      <div className="h-6 bg-gray-200 rounded w-64 mb-4" />
+      <div className="h-4 bg-gray-200 rounded w-48 mb-8" />
+      <div className="space-y-3">
+        {[...Array(4)].map((_, i) => <div key={i} className="h-16 bg-gray-200 rounded" />)}
+      </div>
+    </div>
+  );
   if (error) {
     return <div className="max-w-4xl mx-auto px-6 py-8 text-sm text-red-700">{error}</div>;
   }

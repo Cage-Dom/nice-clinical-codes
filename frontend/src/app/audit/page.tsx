@@ -21,13 +21,21 @@ export default function AuditIndexPage() {
 
   useEffect(() => {
     if (!user) return;
+    let cancelled = false;
     listCodelists({ status: "approved" })
-      .then(setRows)
-      .catch((e) => setError(String(e)))
-      .finally(() => setLoading(false));
+      .then((data) => { if (!cancelled) setRows(data); })
+      .catch((e) => { if (!cancelled) setError(String(e)); })
+      .finally(() => { if (!cancelled) setLoading(false); });
+    return () => { cancelled = true; };
   }, [user]);
 
-  if (!user) return null;
+  if (!user) return (
+    <div className="max-w-4xl mx-auto px-6 py-8 animate-pulse">
+      <div className="h-8 bg-gray-200 rounded w-48 mb-6" />
+      <div className="h-4 bg-gray-200 rounded w-full mb-3" />
+      <div className="h-4 bg-gray-200 rounded w-3/4" />
+    </div>
+  );
 
   return (
     <div className="max-w-4xl mx-auto px-6 py-8">
@@ -44,7 +52,11 @@ export default function AuditIndexPage() {
         </div>
       )}
 
-      {loading && <div className="text-sm text-gray-500">Loading…</div>}
+      {loading && (
+        <div className="animate-pulse space-y-3">
+          {[...Array(3)].map((_, i) => <div key={i} className="h-12 bg-gray-200 rounded" />)}
+        </div>
+      )}
 
       {!loading && rows.length === 0 && (
         <div className="text-center py-12 border border-dashed border-gray-300 rounded">

@@ -59,9 +59,11 @@ export default function CodelistReviewPage({
 
   useEffect(() => {
     if (!user) return;
+    let cancelled = false;
     setLoading(true);
     getCodelist(id)
       .then((cl) => {
+        if (cancelled) return;
         setCodelist(cl);
         const init: Record<number, DraftState> = {};
         for (const d of cl.decisions) {
@@ -72,9 +74,24 @@ export default function CodelistReviewPage({
         }
         setDrafts(init);
       })
-      .catch((e) => setError(String(e)))
-      .finally(() => setLoading(false));
+      .catch((e) => { if (!cancelled) setError(String(e)); })
+      .finally(() => { if (!cancelled) setLoading(false); });
+    return () => { cancelled = true; };
   }, [user, id]);
+
+  // Warn before leaving with unsaved overrides
+  useEffect(() => {
+    if (!codelist) return;
+    const dirty = codelist.decisions.some((d) => {
+      const s = drafts[d.id];
+      if (!s) return false;
+      return s.human_decision !== d.human_decision || s.override_comment !== (d.override_comment ?? "");
+    });
+    if (!dirty) return;
+    const handler = (e: BeforeUnloadEvent) => { e.preventDefault(); };
+    window.addEventListener("beforeunload", handler);
+    return () => window.removeEventListener("beforeunload", handler);
+  }, [drafts, codelist]);
 
   const counts = useMemo(() => {
     const c = { include: 0, exclude: 0, uncertain: 0, overrides: 0 };
@@ -159,10 +176,15 @@ export default function CodelistReviewPage({
     }
   };
 
-  if (!user) return null;
-  if (loading) {
-    return <div className="max-w-6xl mx-auto px-6 py-8 text-sm text-gray-500">Loading…</div>;
-  }
+  if (!user || loading) return (
+    <div className="max-w-6xl mx-auto px-6 py-8 animate-pulse">
+      <div className="h-6 bg-gray-200 rounded w-64 mb-4" />
+      <div className="h-4 bg-gray-200 rounded w-48 mb-8" />
+      <div className="space-y-3">
+        {[...Array(5)].map((_, i) => <div key={i} className="h-12 bg-gray-200 rounded" />)}
+      </div>
+    </div>
+  );
   if (error && !codelist) {
     return <div className="max-w-6xl mx-auto px-6 py-8 text-sm text-red-700">{error}</div>;
   }
