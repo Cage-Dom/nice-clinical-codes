@@ -11,6 +11,7 @@ import {
   type ReviewDecisionInput,
 } from "@/lib/api";
 import { useUser } from "@/lib/useUser";
+import { ConfirmModal } from "../../ConfirmModal";
 
 type HumanDecision = "include" | "exclude" | "uncertain";
 
@@ -47,6 +48,7 @@ export default function CodelistReviewPage({
   const [drafts, setDrafts] = useState<Record<number, DraftState>>({});
   const [notes, setNotes] = useState("");
   const [submitting, setSubmitting] = useState(false);
+  const [confirmAction, setConfirmAction] = useState<"approve" | "reject" | null>(null);
   const [filter, setFilter] = useState<"all" | HumanDecision>("all");
 
   useEffect(() => {
@@ -153,6 +155,7 @@ export default function CodelistReviewPage({
     } catch (e) {
       setError(String(e));
       setSubmitting(false);
+      setConfirmAction(null);
     }
   };
 
@@ -361,14 +364,14 @@ export default function CodelistReviewPage({
           )}
           <div className="flex gap-2">
             <button
-              onClick={() => submit("approve")}
+              onClick={() => setConfirmAction("approve")}
               disabled={submitting || invalid.length > 0}
               className="px-4 py-2 bg-[#00436C] text-white text-sm font-medium rounded hover:bg-[#005EA5] disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {submitting ? "Submitting…" : "Approve codelist"}
             </button>
             <button
-              onClick={() => submit("reject")}
+              onClick={() => setConfirmAction("reject")}
               disabled={submitting || invalid.length > 0}
               className="px-4 py-2 bg-white text-gray-700 text-sm font-medium rounded border border-gray-300 hover:bg-gray-50 disabled:opacity-50"
             >
@@ -377,6 +380,41 @@ export default function CodelistReviewPage({
           </div>
         </div>
       )}
+
+      {/* Approve/reject confirmation modal */}
+      <ConfirmModal
+        open={confirmAction !== null}
+        title={confirmAction === "approve" ? "Approve codelist" : "Reject codelist"}
+        confirmLabel={confirmAction === "approve" ? "Approve" : "Reject"}
+        loadingLabel={confirmAction === "approve" ? "Approving…" : "Rejecting…"}
+        variant={confirmAction === "reject" ? "danger" : "primary"}
+        loading={submitting}
+        onConfirm={() => {
+          if (confirmAction) submit(confirmAction);
+        }}
+        onCancel={() => setConfirmAction(null)}
+      >
+        {confirmAction === "approve" ? (
+          <>
+            <p className="mb-2">
+              <strong>{counts.include}</strong> included,{" "}
+              <strong>{counts.exclude}</strong> excluded,{" "}
+              <strong>{counts.uncertain}</strong> uncertain.
+            </p>
+            <p className="mb-2">
+              <strong>{counts.overrides}</strong> override(s) from the AI&apos;s original decisions.
+            </p>
+            <p className="text-xs text-gray-500">
+              This is irreversible. A SHA-256 signature will be generated and the
+              codelist locked for audit.
+            </p>
+          </>
+        ) : (
+          <p>
+            Reject this codelist? The author will need to create a new draft.
+          </p>
+        )}
+      </ConfirmModal>
     </div>
   );
 }
