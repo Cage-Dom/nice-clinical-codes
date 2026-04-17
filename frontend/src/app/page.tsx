@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { searchCodes, exportCodes, createCodelist } from "@/lib/api";
 import type { CodeResult, SearchResponse } from "@/lib/api";
 import { useUser } from "@/lib/useUser";
+import { getRecent, pushRecent, formatAgo, type RecentSearch } from "@/lib/recentSearches";
 import { ConfirmModal } from "./ConfirmModal";
 
 const PAGE_SIZE = 20;
@@ -148,6 +149,16 @@ export default function Home() {
   const { user } = useUser();
   const router = useRouter();
 
+  const [recent, setRecent] = useState<RecentSearch[]>([]);
+  useEffect(() => { setRecent(getRecent()); }, []);
+
+  const SAMPLE_QUERIES = [
+    "Type 2 diabetes",
+    "Asthma with COPD",
+    "Hypertension in pregnancy",
+    "Chronic kidney disease",
+  ];
+
   const handleSaveAsDraft = () => {
     if (!response?.search_id) return;
     if (!user) {
@@ -176,9 +187,8 @@ export default function Home() {
     }
   };
 
-  const handleSearch = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!query.trim() || loading) return;
+  const runSearch = async (q: string) => {
+    if (!q.trim() || loading) return;
 
     setLoading(true);
     setError(null);
@@ -188,9 +198,11 @@ export default function Home() {
     setDecisionFilter("all");
 
     try {
-      const data = await searchCodes(query);
+      const data = await searchCodes(q);
       setResponse(data);
       setSearchedAt(new Date().toISOString().split("T")[0]);
+      pushRecent({ query: q, codeCount: data.results.length, at: new Date().toISOString() });
+      setRecent(getRecent());
       if (data.results.length > 0) {
         setSelectedCode(data.results[0]);
       }
@@ -199,6 +211,16 @@ export default function Home() {
     } finally {
       setLoading(false);
     }
+  };
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    runSearch(query);
+  };
+
+  const runQuery = (q: string) => {
+    setQuery(q);
+    runSearch(q);
   };
 
   const handleExport = async (format: "csv" | "xlsx") => {
@@ -259,9 +281,22 @@ export default function Home() {
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-8">
+      {/* Hero heading — visible when no results */}
+      {!results && !loading && (
+        <div className="max-w-5xl mx-auto text-center mb-6 mt-4">
+          <h1 className="font-[family-name:var(--font-lora)] text-3xl lg:text-4xl font-semibold text-[#00436C] mb-3">
+            Generate a clinical code list
+          </h1>
+          <p className="text-gray-600 text-base">
+            Search SNOMED CT and ICD-10 codes across NHS reference sets, QOF rules,
+            and published codelists.
+          </p>
+        </div>
+      )}
+
       {/* Search */}
-      <div className="flex justify-center mb-10">
-        <form onSubmit={handleSearch} className="w-full max-w-3xl">
+      <div className="flex justify-center mb-6 w-full">
+        <form onSubmit={handleSearch} className="w-full max-w-5xl">
           <div className="flex border border-gray-300 bg-white overflow-hidden focus-within:ring-2 focus-within:ring-[#005EA5] focus-within:border-transparent">
             <div className="flex items-center pl-4 text-gray-400">
               <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
@@ -280,7 +315,7 @@ export default function Home() {
             <button
               type="submit"
               disabled={loading || !query.trim()}
-              className="px-8 bg-[#005EA5] text-white font-medium hover:bg-[#00436C] disabled:opacity-50 transition-colors"
+              className="px-4 sm:px-8 bg-[#005EA5] text-white font-medium hover:bg-[#00436C] disabled:opacity-50 transition-colors whitespace-nowrap"
             >
               {loading ? "Searching..." : "Search"}
             </button>
@@ -489,16 +524,45 @@ export default function Home() {
         </div>
       )}
 
-      {/* Empty state */}
+      {/* Sample chips + recent searches — only when empty */}
       {!results && !loading && !error && (
-        <div className="text-center mt-20">
-          <h2 className="font-[family-name:var(--font-lora)] text-2xl font-semibold text-gray-700 mb-2">
-            Clinical Code Search
-          </h2>
-          <p className="text-gray-500 text-sm">
-            Search for SNOMED CT and ICD-10 codes across NHS reference sets,
-            QOF business rules, and published code lists.
-          </p>
+        <div className="max-w-5xl mx-auto mt-2 w-full">
+          <div className="flex flex-wrap items-center gap-2 mb-10">
+            <span className="text-xs text-gray-600 mr-1">Try an example:</span>
+            {SAMPLE_QUERIES.map((q) => (
+              <button
+                key={q}
+                onClick={() => runQuery(q)}
+                className="px-3 py-1 text-xs text-[#00436C] border border-[#00436C] rounded hover:bg-[#00436C] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#005EA5]"
+              >
+                {q}
+              </button>
+            ))}
+          </div>
+
+          {recent.length > 0 && (
+            <div>
+              <h2 className="font-[family-name:var(--font-lora)] text-lg font-semibold text-[#00436C] mb-3">
+                Recent searches
+              </h2>
+              <ul className="divide-y divide-gray-300 border-y border-gray-300">
+                {recent.map((r) => (
+                  <li key={r.at}>
+                    <button
+                      onClick={() => runQuery(r.query)}
+                      className="w-full flex items-center justify-between px-3 py-3 text-sm hover:bg-gray-50 text-left focus:outline-none focus:ring-2 focus:ring-[#005EA5]"
+                    >
+                      <span>
+                        <span className="font-medium">{r.query}</span>
+                        <span className="text-gray-500"> · {r.codeCount.toLocaleString()} codes found</span>
+                      </span>
+                      <span className="text-xs text-gray-400">{formatAgo(r.at)}</span>
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       )}
 
