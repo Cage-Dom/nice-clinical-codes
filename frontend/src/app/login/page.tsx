@@ -15,7 +15,11 @@ export default function LoginPage() {
 function LoginPageInner() {
   const router = useRouter();
   const params = useSearchParams();
-  const nextParam = params.get("next") || "/";
+  const rawNext = params.get("next") || "/";
+  // Prevent open redirect — only allow relative paths starting with /
+  const nextParam = rawNext.startsWith("/") && !rawNext.startsWith("//") && !rawNext.startsWith("/\\")
+    ? rawNext
+    : "/";
 
   const [users, setUsers] = useState<User[]>([]);
   const [selectedId, setSelectedId] = useState<number | null>(null);

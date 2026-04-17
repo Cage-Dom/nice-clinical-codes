@@ -44,7 +44,8 @@ export async function exportCodes(
   outputFormat: "csv" | "xlsx" = "csv"
 ): Promise<Blob> {
   const res = await fetch(
-    `${API_BASE}/export/${searchId}?output_format=${outputFormat}`
+    `${API_BASE}/export/${searchId}?output_format=${outputFormat}`,
+    AUTH_FETCH
   );
   if (!res.ok) {
     throw new Error(`Export failed: ${res.status}`);

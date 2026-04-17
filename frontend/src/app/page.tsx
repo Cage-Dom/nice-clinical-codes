@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { searchCodes, exportCodes, createCodelist } from "@/lib/api";
 import type { CodeResult, SearchResponse } from "@/lib/api";
 import { useUser } from "@/lib/useUser";
+import { ConfirmModal } from "./ConfirmModal";
 
 const PAGE_SIZE = 20;
 
@@ -56,11 +57,18 @@ function LoadingProgress() {
       <div className="flex flex-col items-center gap-6">
         <div className="h-10 w-10 border-4 border-[#005EA5] border-t-transparent rounded-full animate-spin" />
 
-        <p className="text-gray-700 text-sm font-medium text-center">
-          {LOADING_STEPS[step].label}
+        <p className="text-gray-700 text-sm font-medium text-center" aria-live="polite">
+          {LOADING_STEPS[step]?.label ?? "Processing..."}
         </p>
 
-        <div className="w-full bg-gray-200 h-2 overflow-hidden">
+        <div
+          className="w-full bg-gray-200 h-2 overflow-hidden"
+          role="progressbar"
+          aria-valuenow={Math.round(progress)}
+          aria-valuemin={0}
+          aria-valuemax={100}
+          aria-label="Pipeline progress"
+        >
           <div
             className="h-full bg-[#005EA5] transition-all duration-1000 ease-out"
             style={{ width: `${progress}%` }}
@@ -127,17 +135,20 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [response, setResponse] = useState<SearchResponse | null>(null);
+  const [searchedAt, setSearchedAt] = useState<string>("");
   const [selectedCode, setSelectedCode] = useState<CodeResult | null>(null);
   const [exporting, setExporting] = useState(false);
   const [saving, setSaving] = useState(false);
   const [saveError, setSaveError] = useState<string | null>(null);
+  const [showSaveModal, setShowSaveModal] = useState(false);
+  const [draftName, setDraftName] = useState("");
   const [page, setPage] = useState(1);
   const [decisionFilter, setDecisionFilter] = useState("all");
 
   const { user } = useUser();
   const router = useRouter();
 
-  const handleSaveAsDraft = async () => {
+  const handleSaveAsDraft = () => {
     if (!response?.search_id) return;
     if (!user) {
       router.push(`/login?next=/`);
@@ -146,12 +157,18 @@ export default function Home() {
     const defaultName = response.query
       ? `${response.query} — ${new Date().toLocaleDateString()}`
       : `Codelist — ${new Date().toLocaleString()}`;
-    const name = window.prompt("Name this codelist:", defaultName);
-    if (!name) return;
+    setDraftName(defaultName);
+    setSaveError(null);
+    setShowSaveModal(true);
+  };
+
+  const confirmSave = async () => {
+    if (!response?.search_id || !draftName.trim()) return;
     setSaving(true);
     setSaveError(null);
     try {
-      const cl = await createCodelist(response.search_id, name);
+      const cl = await createCodelist(response.search_id, draftName.trim());
+      setShowSaveModal(false);
       router.push(`/codelists/${cl.id}`);
     } catch (e) {
       setSaveError(String(e));
@@ -173,6 +190,7 @@ export default function Home() {
     try {
       const data = await searchCodes(query);
       setResponse(data);
+      setSearchedAt(new Date().toISOString().split("T")[0]);
       if (data.results.length > 0) {
         setSelectedCode(data.results[0]);
       }
@@ -256,12 +274,13 @@ export default function Home() {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Enter clinical condition (e.g. type 2 diabetes with hypertension)"
+              aria-label="Search clinical terms"
               className="flex-1 px-3 py-3 focus:outline-none"
             />
             <button
               type="submit"
               disabled={loading || !query.trim()}
-              className="px-8 bg-[#005EA5] text-white font-medium hover:bg-[#00436E] disabled:opacity-50 transition-colors"
+              className="px-8 bg-[#005EA5] text-white font-medium hover:bg-[#00436C] disabled:opacity-50 transition-colors"
             >
               {loading ? "Searching..." : "Search"}
             </button>
@@ -405,7 +424,7 @@ export default function Home() {
                 <button
                   onClick={() => handleExport("csv")}
                   disabled={exporting || !response?.search_id}
-                  className="inline-flex items-center gap-2 px-5 py-2 bg-[#005EA5] text-white text-sm font-medium hover:bg-[#00436E] transition-colors disabled:opacity-50"
+                  className="inline-flex items-center gap-2 px-5 py-2 bg-[#005EA5] text-white text-sm font-medium hover:bg-[#00436C] transition-colors disabled:opacity-50"
                 >
                   <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
@@ -442,19 +461,15 @@ export default function Home() {
                   </div>
                   <div>
                     <dt className="font-semibold">Search Date</dt>
-                    <dd className="text-gray-600 mt-0.5">{new Date().toISOString().split("T")[0]}</dd>
+                    <dd className="text-gray-600 mt-0.5">{searchedAt || "—"}</dd>
                   </div>
                   <div>
                     <dt className="font-semibold">Search Query</dt>
-                    <dd className="text-gray-600 mt-0.5">{query}</dd>
+                    <dd className="text-gray-600 mt-0.5">{response?.query ?? query}</dd>
                   </div>
                   <div>
                     <dt className="font-semibold">Decision Rationale</dt>
                     <dd className="text-gray-600 mt-0.5">{selectedCode.rationale}</dd>
-                  </div>
-                  <div>
-                    <dt className="font-semibold">Algorithm Version</dt>
-                    <dd className="text-gray-600 mt-0.5">0.1.0</dd>
                   </div>
                 </dl>
               ) : (
@@ -486,6 +501,39 @@ export default function Home() {
           </p>
         </div>
       )}
+
+      {/* Save-as-draft modal */}
+      <ConfirmModal
+        open={showSaveModal}
+        title="Save as draft codelist"
+        confirmLabel="Save"
+        loadingLabel="Saving…"
+        confirmDisabled={!draftName.trim()}
+        loading={saving}
+        onConfirm={confirmSave}
+        onCancel={() => setShowSaveModal(false)}
+      >
+        <p className="mb-3">
+          This will persist {response?.results.length ?? 0} codes for clinical review.
+        </p>
+        <label htmlFor="draft-name" className="block text-sm font-medium text-gray-700 mb-1">
+          Codelist name
+        </label>
+        <input
+          id="draft-name"
+          type="text"
+          value={draftName}
+          onChange={(e) => setDraftName(e.target.value)}
+          maxLength={200}
+          onKeyDown={(e) => { if (e.key === "Enter" && draftName.trim()) confirmSave(); }}
+          className="w-full px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:border-[#005EA5]"
+        />
+        {saveError && (
+          <div className="mt-2 text-xs text-red-700 bg-red-50 border border-red-200 rounded p-2">
+            {saveError}
+          </div>
+        )}
+      </ConfirmModal>
     </div>
   );
 }
