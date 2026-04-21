@@ -4,7 +4,7 @@ export interface RecentSearch {
   at: string; // ISO
 }
 
-const KEY = "nice:recentSearches";
+const KEY = "ccd:recentSearches";
 const MAX = 5;
 
 export function getRecent(): RecentSearch[] {
