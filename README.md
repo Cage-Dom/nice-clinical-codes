@@ -10,7 +10,7 @@
 
 Agentic AI system that autonomously discovers, enriches, and validates clinical codes (SNOMED CT, ICD-10, OPCS-4) for NICE (National Institute for Health and Care Excellence). Built as a multi-agent RAG pipeline orchestrated by LangGraph, with parallel autonomous retrieval from five NHS data sources, UMLS knowledge graph expansion, and Claude-powered clinical reasoning.
 
-Given a clinical condition (e.g. "type 2 diabetes with hypertension"), the system deploys specialised agents to retrieve candidate codes in parallel, merges and deduplicates across sources, expands coverage via UMLS synonym and hierarchical relationships, then applies LLM-based clinical reasoning to score each code for inclusion/exclusion — delivering a validated code list with full provenance in under 60 seconds.
+Given a clinical condition (e.g. "type 2 diabetes with hypertension"), the system deploys specialised agents to retrieve candidate codes in parallel, merges and deduplicates across sources, expands coverage via UMLS synonym and hierarchical relationships, then applies LLM-based clinical reasoning to score each code for inclusion/exclusion, delivering a validated code list with full provenance in under 60 seconds.
 
 ## Architecture
 
@@ -42,13 +42,13 @@ User → Frontend (Next.js)
 ## Tech Stack
 
 - **Agent Orchestration:** LangGraph (multi-agent StateGraph with parallel fan-out)
-- **LLM:** Claude API — Sonnet for query parsing, Haiku for high-throughput scoring
+- **LLM:** Claude API (Sonnet for query parsing, Haiku for high-throughput scoring)
 - **Backend:** Python, FastAPI, async pipeline execution
 - **Frontend:** Next.js 16, TypeScript, Tailwind CSS
 - **Vector DB:** ChromaDB with PubMedBERT biomedical embeddings
 - **Knowledge Graph:** UMLS Metathesaurus (synonym, narrower, sibling expansion)
 - **Data Sources:** QOF Business Rules, OpenCodelists, OPCS-4, OMOPHub, UMLS (35K+ codes)
-- **Deployment:** AWS ECS Fargate, ECR, ALB, ACM, Route 53 — [clinicalcodes.uk](https://clinicalcodes.uk)
+- **Deployment:** AWS ECS Fargate, ECR, ALB, ACM, Route 53. Live at [clinicalcodes.uk](https://clinicalcodes.uk)
 - **Cost:** ~$0.03/query (95% reduction from $0.67 through model selection and candidate capping)
 
 ## Getting Started
@@ -103,11 +103,11 @@ This populates SQLite and ChromaDB with QOF business rules (23K SNOMED codes), O
 6. Run both services:
 
 ```bash
-# Terminal 1 — backend
+# Terminal 1: backend
 cd backend
 uvicorn app.main:app --reload --port 8000
 
-# Terminal 2 — frontend
+# Terminal 2: frontend
 cd frontend
 npm run dev
 ```
@@ -125,7 +125,7 @@ cp .env.example .env
 docker-compose up --build
 ```
 
-The Docker build runs data ingestion automatically — no manual step needed. SQLite and ChromaDB databases are embedded in the image.
+The Docker build runs data ingestion automatically, no manual step needed. SQLite and ChromaDB databases are embedded in the image.
 
 ## Environment Variables
 
@@ -189,12 +189,12 @@ The Docker build runs data ingestion automatically — no manual step needed. SQ
 
 University of Cambridge Data Science (PACE), developed in collaboration with NICE (National Institute for Health and Care Excellence).
 
-- **Carlos Ramirez** — Engineering Lead (pipeline architecture, multi-agent system, AWS deployment)
-- **Anna Deluca** — Evaluation & Quality Assurance
-- **Dom Cage** — Project Manager & Baseline Integration
-- **Ash** — Research & Data Analysis
-- **Ish** — Research
-- **Zhao** — Research
+- **Dominic Cage** | Project Lead, Proof-of-concept Engineer | [LinkedIn](https://linkedin.com/in/dominic-cage-41862814b)
+- **Carlos Ramirez** | AI Engineering Lead | [LinkedIn](https://www.linkedin.com/in/cramirez2) · [GitHub](https://github.com/carlos-ramblox)
+- **Ashley Ramsawhook** | Communications Lead, Data Analysis | [LinkedIn](https://linkedin.com/in/ashley-ramsawhook-b48313339)
+- **Zhaoyue Li** | Content Curator, Research | [LinkedIn](https://linkedin.com/in/zhao-yue-l-4013a4175)
+- **Ishwarya Thanigaivelan** | Content Curator, Research | [LinkedIn](https://linkedin.com/in/ishwarya-thanigaivelan-11831517)
+- **Anna Desalvo** | Evaluation Lead, Data Analysis | [LinkedIn](https://linkedin.com/in/anna-desalvo-data-scientist)
 ## License
 
 MIT
