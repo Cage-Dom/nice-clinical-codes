@@ -52,6 +52,24 @@ User → Frontend (Next.js)
 - **Deployment:** AWS ECS Fargate, ECR, ALB, ACM, Route 53. Live at [clinicalcodes.uk](https://clinicalcodes.uk)
 - **Cost:** per-query cost dominated by the LLM scoring step; tracked at request time but not currently benchmarked against a fixed test set
 
+## Reproducibility
+
+The pipeline aims for the same query at time T to yield the same candidate codelist, to the extent the underlying sources and model providers allow. Bit-identical reproduction across calendar time is not claimed.
+
+**Deterministic by construction:**
+
+- **Both LLM stages run at `temperature=0`:** query parsing with Claude Sonnet 4 (`backend/app/graph/nodes/query_parser.py`) and per-code scoring with Claude Haiku 4.5 (`backend/app/graph/nodes/llm_reasoning.py`). Candidates are sorted by `(vocabulary, code)` before batching (`llm_reasoning.py:108`), so identical input yields identical prompt batches across runs.
+- **Model identifiers are pinned** to date-stamped IDs in `backend/app/config.py`: `claude-sonnet-4-20250514` for query parsing and `claude-haiku-4-5-20251001` for per-code scoring. Floating aliases such as "latest" are not used.
+- **File-based sources are versioned snapshots:** QOF Business Rules (`Business_Rules_Combined_Change_Log_QOF+2024-25_v49.1.xlsm`), OPCS-4 (`OPCS411 CodesAndTitles Nov 2025 V1.0.xml`) and the OpenCodelists CSVs committed alongside the code under `data/raw/opencodelists/`.
+- **Embedding model is pinned** to `NeuML/pubmedbert-base-embeddings`, and ChromaDB is rebuilt from the versioned sources above during the Docker build (`backend/Dockerfile`, `ingest` stage) rather than pulled from a remote artefact.
+- **Approved codelists carry a SHA-256 digest** computed over the final per-code human decisions, alongside an audit log of the query, per-code AI decision / confidence / rationale, reviewer overrides and comments, reviewer identity and timestamps (`backend/app/db/hitl_store.py`). Together these support post-hoc reconstruction of any approved artefact.
+
+**Where determinism cannot be guaranteed:**
+
+- **OMOPHub and UMLS are live APIs** (`backend/app/graph/nodes/omophub_retriever.py`, `umls_enrichment_node.py`); their underlying datasets evolve over time, so the same query at a later date may surface a different candidate set.
+- **LLM provider behaviour at `temperature=0`** is nominally deterministic but can produce small variations between calls in practice; the audit log captures the actual outputs at the time of approval to support post-hoc reproduction rather than re-execution from scratch.
+- See [LIMITATIONS.md](LIMITATIONS.md) for the full set of caveats.
+
 ## Getting Started
 
 ### Prerequisites

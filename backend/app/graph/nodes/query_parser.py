@@ -51,6 +51,7 @@ def parse_query(raw_query: str) -> dict:
         model=LLM_MODEL,
         api_key=ANTHROPIC_API_KEY,
         max_tokens=1024,
+        temperature=0,
     )
     structured_llm = llm.with_structured_output(ParsedQuery)
 
