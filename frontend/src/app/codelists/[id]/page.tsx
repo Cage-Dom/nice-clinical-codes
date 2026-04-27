@@ -366,7 +366,7 @@ export default function CodelistReviewPage({
           <textarea
             value={notes}
             onChange={(e) => setNotes(e.target.value)}
-            placeholder="e.g. Approved for NICE Diabetes Guidance v3.2 draft"
+            placeholder="e.g. Approved for Diabetes Guidance v3.2 draft"
             rows={2}
             maxLength={1000}
             className="w-full px-3 py-2 border border-gray-300 rounded text-sm mb-3"

@@ -17,7 +17,7 @@ const LOADING_STEPS = [
   { label: "Checking published code lists on OpenCodelists...", delay: 9000 },
   { label: "Running semantic search across embedded codes...", delay: 12000 },
   { label: "Merging and deduplicating results...", delay: 18000 },
-  { label: "Scoring codes with AI reasoning...", delay: 22000 },
+  { label: "Scoring codes with LLM reasoning...", delay: 22000 },
   { label: "Almost done — assembling final results...", delay: 35000 },
 ];
 
