@@ -45,7 +45,7 @@ Bennett's example: "sore throat" indicates Group A Streptococcus but also many o
 - Authentication is a demo mechanism; NHS OAuth/SAML and NHS Identity integration are not yet implemented.
 - No clinical safety case has been written. The system is a research and development prototype.
 - FAIR-compliance of generated codelists has not been formally evaluated against the criteria set out in Williams et al. (2019).
-- Cost and latency at scale (large query batches, multi-tenant load) have not been characterised.
+- Cost and latency at scale (large query batches, multi-tenant load) have not been characterised. Per-query latency is sensitive to model availability, candidate volume, and source-API response time; the README's "tens of seconds" framing is representative of the test conditions used during development and is not a guaranteed bound. Per-query cost is recorded at request time but has not been benchmarked against a fixed test set, so headline cost-reduction figures are not currently claimed.
 
 ## What this document does NOT claim
 

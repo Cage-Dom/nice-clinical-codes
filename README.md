@@ -8,9 +8,9 @@
 
 **Live:** [clinicalcodes.uk](https://clinicalcodes.uk)
 
-Multi-source pipeline that **discovers** candidate clinical codes (SNOMED CT, ICD-10, OPCS-4) via parallel retrieval from five UK data sources, **enriches** them through UMLS-based synonym expansion, and supports **validation** through per-code LLM scoring (Claude Haiku 4.5) and a human review gate. Developed as part of the University of Cambridge (PACE) Data Science programme, in collaboration with NICE stakeholders.
+Multi-source pipeline that **discovers** candidate clinical codes (SNOMED CT, ICD-10, OPCS-4) via four parallel retrievers across UK clinical vocabularies, **enriches** them through UMLS-based synonym expansion, and supports **validation** through per-code LLM scoring (Claude Haiku 4.5) and a human review gate. Developed as part of the University of Cambridge (PACE) Data Science programme, in collaboration with NICE stakeholders.
 
-Given a clinical condition (e.g. "type 2 diabetes with hypertension"), the pipeline returns a candidate codelist with full provenance — every code carries its source(s), an LLM-generated rationale, and a confidence score — typically in under 60 seconds. Human reviewers then accept, reject or edit individual codes before the codelist is exported. The output format is compatible with OpenCodelists.
+Given a clinical condition (e.g. "type 2 diabetes with hypertension"), the pipeline returns a candidate codelist with full provenance — every code carries its source(s), an LLM-generated rationale, and a confidence score. Human reviewers then accept, reject or edit individual codes before the codelist is exported. The output format is compatible with OpenCodelists. End-to-end latency for a representative single-condition query is on the order of tens of seconds, dominated by per-code LLM scoring and subject to model availability and source-API response time; we have not yet characterised median or worst-case latency on a fixed test set (see [LIMITATIONS.md](LIMITATIONS.md)). The published comparator for manual codelist construction is months of clinician time (Aslam et al., 2025).
 
 ## Architecture
 
@@ -50,7 +50,7 @@ User → Frontend (Next.js)
 - **Knowledge graph:** UMLS Metathesaurus (synonym, narrower, sibling expansion)
 - **Data sources:** QOF Business Rules, OpenCodelists, OPCS-4, OMOPHub, UMLS (35K+ codes)
 - **Deployment:** AWS ECS Fargate, ECR, ALB, ACM, Route 53. Live at [clinicalcodes.uk](https://clinicalcodes.uk)
-- **Cost:** ~$0.03/query (95% reduction from $0.67 through model selection and candidate capping)
+- **Cost:** per-query cost dominated by the LLM scoring step; tracked at request time but not currently benchmarked against a fixed test set
 
 ## Getting Started
 
