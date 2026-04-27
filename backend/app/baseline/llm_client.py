@@ -1,6 +1,6 @@
 """
 LLM-only baseline: direct OpenRouter call with no retrieval, no RAG.
-Used to benchmark the agentic pipeline against single-LLM approaches.
+Used to benchmark the multi-step pipeline against single-LLM approaches.
 
 The prompt is adapted from Dom's llm_client.py (originally Ollama/local Phi-4).
 We call OpenRouter so we can compare multiple LLMs (microsoft/phi-4,
