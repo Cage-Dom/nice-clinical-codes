@@ -1,6 +1,7 @@
 """Tests for backend/app/graph/nodes/ols_retriever.py (issue #25)."""
 from __future__ import annotations
 
+import logging
 import sys
 from pathlib import Path
 from unittest.mock import MagicMock, patch
@@ -126,3 +127,13 @@ def test_graceful_degradation_on_timeout():
 def test_empty_conditions():
     out = ols.retrieve_from_ols({"parsed_conditions": []})
     assert out == {"retrieved_codes": [], "sources_queried": []}
+
+def test_search_log_does_not_forge_lines(caplog):
+    payload = "diabetes\n2026-07-17 10:00:00 ERROR auth: fake admin login succeeded"
+    with caplog.at_level(logging.INFO), patch(
+        "app.graph.nodes.ols_retriever.requests.get",
+        return_value=_resp([]),
+    ):
+        ols._search_ols(payload, "efo")
+    for record in caplog.records:
+        assert "\n" not in record.getMessage()

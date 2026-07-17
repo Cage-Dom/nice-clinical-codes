@@ -36,7 +36,7 @@ def _search_ols(term: str, ontology: str, top_k: int = RETRIEVAL_TOP_K) -> list[
         r.raise_for_status()
         docs = r.json().get("response", {}).get("docs", [])
     except Exception as exc:  # noqa: BLE001 — graceful degradation
-        logger.warning("OLS4 %s query failed for '%s': %s", ontology, term, exc)
+        logger.warning("OLS4 %s query failed for '%r': %s", ontology, term, exc)
         return []
 
     codes: list[dict] = []
@@ -60,7 +60,7 @@ def _search_ols(term: str, ontology: str, top_k: int = RETRIEVAL_TOP_K) -> list[
             # reconstructing the URL from the obo_id (issue #25).
             "iri": doc.get("iri"),
         })
-    logger.info("OLS4 %s: '%s' -> %d codes", ontology.upper(), term, len(codes))
+    logger.info("OLS4 %s: '%r' -> %d codes", ontology.upper(), term, len(codes))
     return codes
 
 
