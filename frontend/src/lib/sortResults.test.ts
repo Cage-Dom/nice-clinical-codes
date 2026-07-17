@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { sortResults } from "./sortResults";
+import type { SortMode } from "./api";
 import { FIXTURE_RESULTS, FIXTURE_PARSED } from "./sortResults.test.fixtures";
-
 const codes = (rows: { code: string }[]) => rows.map((r) => r.code);
 
 describe("sortResults", () => {
@@ -27,5 +27,11 @@ describe("sortResults", () => {
     expect(codes(sortResults(FIXTURE_RESULTS, "confidence", FIXTURE_PARSED))).toEqual([
       "Z99", "I10", "44054006", "X99", "Y99",
     ]);
+  });
+
+  it("falls back to the input order for an unrecognised mode", () => {
+    expect(codes(sortResults(FIXTURE_RESULTS, "bogus" as SortMode, FIXTURE_PARSED))).toEqual(
+      codes(FIXTURE_RESULTS),
+    );
   });
 });

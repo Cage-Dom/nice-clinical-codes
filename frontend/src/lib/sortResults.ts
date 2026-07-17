@@ -64,5 +64,7 @@ export function sortResults(
       arr.sort((a, b) => (b.confidence ?? 0) - (a.confidence ?? 0));
       return arr;
     }
+    default:
+        return arr;
   }
 }
