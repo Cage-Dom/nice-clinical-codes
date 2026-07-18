@@ -146,6 +146,9 @@ def enrich_with_xrefs(state: dict) -> dict:
         codes.sort(key=_stable_sort_key)
         codes = codes[:MAX_CANDIDATES]
 
+    # remove OLS ontology codes from set
+    codes = [c for c in codes if not str(c.get("source", "")).startswith(_OLS_SOURCE_PREFIX)]
+
     logger.info(
         "xref_enricher: minted %d SNOMED codes from %d OLS concepts",
         added, len(ontology_concepts),

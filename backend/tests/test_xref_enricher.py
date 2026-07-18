@@ -79,10 +79,10 @@ def test_non_snomed_xrefs_ignored():
     with patch("app.graph.nodes.xref_enricher.requests.get",
                return_value=_td_resp(xrefs)):
         out = xr.enrich_with_xrefs(state)
-    # only the original phenotype remains; nothing minted
     assert all(c["vocabulary"] != "SNOMED CT" for c in out["enriched_codes"])
     assert all(c["vocabulary"] != "ICD-10 (WHO)" for c in out["enriched_codes"])
-    assert len(out["enriched_codes"]) == 1
+    # MONDO phenotype code dropped
+    assert len(out["enriched_codes"]) == 0
 
 
 def test_predicate_filter_drops_loose_mappings():
@@ -103,7 +103,7 @@ def test_malformed_sctid_rejected():
                return_value=_td_resp(xrefs)):
         out = xr.enrich_with_xrefs(state)
     assert all(c["vocabulary"] != "SNOMED CT" for c in out["enriched_codes"])
-    assert len(out["enriched_codes"]) == 1  # only the original phenotype remains
+    assert len(out["enriched_codes"]) == 0 # malformed SCTID rejected; raw MONDO row dropped
 
 
 def test_corroborates_existing_snomed_code_no_duplicate():
@@ -151,9 +151,9 @@ def test_graceful_degradation_on_timeout():
     with patch("app.graph.nodes.xref_enricher.requests.get",
                side_effect=requests.Timeout("boom")):
         out = xr.enrich_with_xrefs(state)
-    # no crash; phenotype unchanged, nothing minted
+    # no crash; nothing minted, raw phenotype row dropped
     assert all(c["vocabulary"] != "SNOMED CT" for c in out["enriched_codes"])
-    assert len(out["enriched_codes"]) == 1
+    assert len(out["enriched_codes"]) == 0
 
 
 def test_caps_term_detail_calls():
