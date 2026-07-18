@@ -86,6 +86,7 @@ OLS4_XREF_WORKERS = max(1, int(os.getenv("OLS4_XREF_WORKERS", "10")))   # parall
 # so xref codes dedup-merge with retriever-sourced ones).
 OLS4_XREF_VOCAB_MAP = {
     "SCTID": "SNOMED CT",
+    'SNOMEDCT': 'SNOMED CT'
 }
 
 # HDR UK Phenotype Library -- anonymous public read, no API key required.

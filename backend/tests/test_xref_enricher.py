@@ -186,3 +186,17 @@ def test_post_mint_cap_ranks_by_stable_key_not_alphabetical():
     # cap=1 keeps only the top-ranked candidate: high source_count wins despite
     # its lexicographically-late code (alphabetical sort would have dropped it).
     assert [c["code"] for c in out["enriched_codes"]] == ["zzz999999"]
+
+
+def test_native_efo_snomedct_xref_with_null_description_minted():
+    state = {"enriched_codes": [_ols_concept()]}
+    xrefs = [
+        {"database": "MESH", "id": "C562710", "description": None},
+        {"database": "SNOMEDCT", "id": "9859006", "description": None},
+    ]
+    with patch("app.graph.nodes.xref_enricher.requests.get",
+               return_value=_td_resp(xrefs)):
+        out = xr.enrich_with_xrefs(state)
+    minted = [c for c in out["enriched_codes"] if c["vocabulary"] == "SNOMED CT"]
+    assert len(minted) == 1
+    assert minted[0]["code"] == "9859006"

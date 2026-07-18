@@ -73,7 +73,7 @@ def _fetch_xrefs(concept: dict) -> list[dict]:
         xid = x.get("id")
         desc = x.get("description", "")
         vocab = OLS4_XREF_VOCAB_MAP.get(db)  # ICD-10 / UMLS / etc. excluded by the map
-        if not vocab or not xid or not _predicate_ok(desc):
+        if not vocab or not xid or (desc and not _predicate_ok(desc)):
             continue
         if vocab == "SNOMED CT" and not _SCTID_RE.match(str(xid)):
             continue  # reject a malformed SCTID rather than mint it as a code
