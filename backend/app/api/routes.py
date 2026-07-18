@@ -184,6 +184,16 @@ class SearchResponse(BaseModel):
     comorbidity_suggestions: list[ComorbiditySuggestion] | None = None
 
 
+def _parse_dropping_malformed(items: list[dict], model: type[BaseModel], label: str) -> list[BaseModel]:
+    """Build `model` from each item, dropping and logging any that fail validation."""
+    out = []
+    for item in items:
+        try:
+            out.append(model(**item))
+        except Exception:
+            logger.warning("Dropping malformed %s as %r", label, item)
+    return out
+
 # Endpoints
 
 @router.post("/search", response_model=SearchResponse)
@@ -263,20 +273,10 @@ async def search_codes(
 
     # Disambiguation is informational and must never sink the response: drop
     # a malformed entry rather than 500 a search that already has scored codes.
-    disambiguation = []
-    for d in result.get("disambiguation_suggestions", []):
-        try:
-            disambiguation.append(DisambiguationEntry(**d))
-        except Exception:
-            logger.warning("Dropping malformed disambiguation entry: %r", d)
-
-    # informational: drop a malformed hint rather than 500
-    comorbidity_suggestions = []
-    for s in result.get("comorbidity_suggestions", []):
-        try:
-            comorbidity_suggestions.append(ComorbiditySuggestion(**s))
-        except Exception:
-            logger.warning("Dropping malformed comorbidity suggestion: %r", s)
+    disambiguation = _parse_dropping_malformed(
+        result.get("disambiguation_suggestions", []), DisambiguationEntry, "disambiguation entry")
+    comorbidity_suggestions = _parse_dropping_malformed(
+        result.get("comorbidity_suggestions", []), ComorbiditySuggestion, "comorbidity suggestion")
 
     return SearchResponse(
         search_id=search_id,
