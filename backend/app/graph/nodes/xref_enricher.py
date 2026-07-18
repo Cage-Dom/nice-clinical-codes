@@ -64,7 +64,7 @@ def _fetch_xrefs(concept: dict) -> list[dict]:
         term = r.json()["_embedded"]["terms"][0]
         xrefs = term.get("obo_xref") or []
     except Exception as exc:  # noqa: BLE001 — graceful degradation
-        logger.warning("OLS4 xref fetch failed for %s: %s", iri, exc)
+        logger.warning("OLS4 xref fetch failed for %r: %r", iri, exc)
         return []
 
     out: list[dict] = []
@@ -118,7 +118,7 @@ def enrich_with_xrefs(state: dict) -> dict:
     for m in minted:
         key = (m["code"], m["vocabulary"])
         src = m.pop("source")
-        if key in existing:  # retriever already found this code
+        if key in existing:
             tgt = existing[key]
             tgt.setdefault("sources", [tgt.get("source", "")])
             if src not in tgt["sources"]:
