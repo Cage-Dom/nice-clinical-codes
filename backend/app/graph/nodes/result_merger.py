@@ -1,11 +1,12 @@
 import logging
 
-from app.config import MAX_CANDIDATES, DRUG_VOCAB_QUOTA, EMIT_CAP_DIAGNOSTICS
+from app.config import MAX_CANDIDATES, DRUG_VOCAB_QUOTA, EMIT_CAP_DIAGNOSTICS, OLS4_XREF_MAX_CONCEPTS
 from app.graph.vocab_matching import requested_vocab_set
 
 logger = logging.getLogger(__name__)
 
 _DRUG_VOCABS: tuple[str, ...] = ("dm+d", "BNF")
+_OLS_SOURCE_PREFIX = "OLS4 ("
 
 
 def _stable_sort_key(c: dict) -> tuple:
@@ -21,32 +22,46 @@ def _stable_sort_key(c: dict) -> tuple:
 def _apply_drug_quota(
     deduped: list[dict], parsed_conditions: list[dict], cap: int,
 ) -> list[dict]:
-    """Reserve quota slots per drug vocab when the query has a Drug condition."""
-    has_drug = any(c.get("domain") == "Drug" for c in parsed_conditions)
+    """Reserve quota slots per drug vocab when the query has a Drug condition
+    and always reserve headroom for OLS4-sourced concepts so a broad-recall
+    query can't evict them before xref_enricher has a chance to run."""
+    has_drug = any(c.get("domain") == "Drug" for c in parsed_conditions)    
+    
+    ols4_pool = [
+        c for c in deduped if str(c.get("source", "")).startswith(_OLS_SOURCE_PREFIX)
+    ]
+    ols4_pool.sort(key=_stable_sort_key)
+    ols4_reserved = ols4_pool[:min(OLS4_XREF_MAX_CONCEPTS, cap)]
+    reserved_ids = {id(c) for c in ols4_reserved}
+    remaining = [c for c in deduped if id(c) not in reserved_ids]
+    
     if not has_drug:
-        return sorted(deduped, key=_stable_sort_key)[:cap]
+        headroom = cap - len(ols4_reserved)
+        fill = sorted(remaining, key=_stable_sort_key)[:headroom] if headroom > 0 else []
+        return sorted(ols4_reserved + fill, key=_stable_sort_key)[:cap]
 
     by_vocab: dict[str, list[dict]] = {}
-    for c in deduped:
+    for c in remaining:
         by_vocab.setdefault(c["vocabulary"], []).append(c)
     for rows in by_vocab.values():
         rows.sort(key=_stable_sort_key)
 
-    reserved: list[dict] = []
+    drug_reserved: list[dict] = []
     for vocab in _DRUG_VOCABS:
-        reserved.extend(by_vocab.get(vocab, [])[:DRUG_VOCAB_QUOTA])
+        drug_reserved.extend(by_vocab.get(vocab, [])[:DRUG_VOCAB_QUOTA])
 
-    other_pool = [c for c in deduped if c["vocabulary"] not in _DRUG_VOCABS]
+    other_pool = [c for c in remaining if c["vocabulary"] not in _DRUG_VOCABS]
     other_pool.sort(key=_stable_sort_key)
     drug_pool_remainder = [
         c for vocab in _DRUG_VOCABS for c in by_vocab.get(vocab, [])[DRUG_VOCAB_QUOTA:]
     ]
 
-    headroom = cap - len(reserved)
+    all_reserved = ols4_reserved + drug_reserved
+    headroom = cap - len(all_reserved)
     fill_pool = sorted(other_pool + drug_pool_remainder, key=_stable_sort_key)
     fill = fill_pool[:headroom] if headroom > 0 else []
 
-    combined = reserved + fill
+    combined = all_reserved + fill
     return sorted(combined, key=_stable_sort_key)[:cap]
 
 
