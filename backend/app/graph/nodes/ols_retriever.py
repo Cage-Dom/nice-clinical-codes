@@ -63,10 +63,6 @@ def _search_ols(term: str, ontology: str, top_k: int = RETRIEVAL_TOP_K) -> list[
     logger.info("OLS4 %s: '%r' -> %d codes", ontology.upper(), term, len(codes))
     return codes
 
-
-# Future vocab-gating: this retriever's effective output is SNOMED CT (via
-# xref), not its raw ontology vocabularies, so a per-retriever vocab gate must
-# key on the post-xref vocab or it would wrongly skip OLS4 on a SNOMED query.
 def retrieve_from_ols(state: dict) -> dict:
     """LangGraph node: query OLS4 for EFO (all conditions) and OAE
     (comorbidities only). Reads parsed_conditions, writes retrieved_codes."""
