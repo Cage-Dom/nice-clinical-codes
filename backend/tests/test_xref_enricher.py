@@ -200,3 +200,47 @@ def test_native_efo_snomedct_xref_with_null_description_minted():
     minted = [c for c in out["enriched_codes"] if c["vocabulary"] == "SNOMED CT"]
     assert len(minted) == 1
     assert minted[0]["code"] == "9859006"
+
+
+def test_ols_rows_do_not_consume_cap_slots_from_minted_codes():
+    """Raw OLS ontology rows are stripped unconditionally, so they must not
+    occupy slots in the post-mint cap. Regression: with the cap applied before
+    the strip, a MONDO row outranks a minted SNOMED code in the
+    (source_count=1, no-score) tier — "MONDO" < "SNOMED CT" on vocabulary —
+    evicting the code the node exists to produce, then being deleted itself."""
+    state = {"enriched_codes": [_ols_concept()]}
+    xrefs = [{"database": "SCTID", "id": "234142008",
+              "description": "MONDO:equivalentTo"}]
+    with patch("app.graph.nodes.xref_enricher.MAX_CANDIDATES", 1), \
+         patch("app.graph.nodes.xref_enricher.requests.get",
+               return_value=_td_resp(xrefs)):
+        out = xr.enrich_with_xrefs(state)
+    assert [c["code"] for c in out["enriched_codes"]] == ["234142008"]
+
+
+def test_cap_measured_against_authorable_codes_only():
+    """The pool handed to the scorer must not be short-changed by rows that are
+    deleted anyway: with cap=3 and three authorable candidates present, all
+    three survive and no OLS row remains."""
+    real = [
+        {"code": f"1000{i}", "term": f"real {i}", "vocabulary": "SNOMED CT",
+         "source": "QOF", "sources": ["QOF"], "source_count": 1,
+         "similarity_score": None}
+        for i in range(3)
+    ]
+    state = {"enriched_codes": [
+        _ols_concept(),
+        _ols_concept(code="MONDO:0007155",
+                     iri="http://purl.obolibrary.org/obo/MONDO_0007155"),
+        *real,
+    ]}
+    xrefs = [{"database": "SCTID", "id": "234142008",
+              "description": "MONDO:equivalentTo"}]
+    with patch("app.graph.nodes.xref_enricher.MAX_CANDIDATES", 3), \
+         patch("app.graph.nodes.xref_enricher.requests.get",
+               return_value=_td_resp(xrefs)):
+        out = xr.enrich_with_xrefs(state)
+    codes = out["enriched_codes"]
+    assert len(codes) == 3
+    assert all(not str(c["source"]).startswith("OLS4 (") for c in codes)
+    

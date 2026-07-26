@@ -140,14 +140,19 @@ def enrich_with_xrefs(state: dict) -> dict:
         codes.append(m)
         added += 1
 
+    # Drop the raw OLS ontology rows before the cap. EFO/MONDO/HP/
+    # OAE/Orphanet codes are never authorable (final list current SNOMED/ICD)
+    # and are removed unconditionally, so they must not occupy
+    # slots in the sort below — in the (source_count=1, no-score) tier they
+    # sort ahead of "SNOMED CT" on vocabulary alone and would evict the codes
+    # this node just minted.
+    codes = [c for c in codes if not str(c.get("source", "")).startswith(_OLS_SOURCE_PREFIX)]
+
     if added and len(codes) > MAX_CANDIDATES:
         # rank by the same key result_merger uses for its cap, so minting can't
         # evict a high-confidence candidate by alphabetical code order.
         codes.sort(key=_stable_sort_key)
         codes = codes[:MAX_CANDIDATES]
-
-    # remove OLS ontology codes from set
-    codes = [c for c in codes if not str(c.get("source", "")).startswith(_OLS_SOURCE_PREFIX)]
 
     logger.info(
         "xref_enricher: minted %d SNOMED codes from %d OLS concepts",
